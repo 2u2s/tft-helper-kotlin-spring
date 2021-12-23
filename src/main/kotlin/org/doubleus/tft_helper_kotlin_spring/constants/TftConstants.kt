@@ -232,5 +232,8 @@ class TftConstants {
             enforcerEmblem, scrapEmblem, protectorEmblem, bruiserEmblem,
             innovatorEmblem, sniperEmblem, scholarEmblem,
         )
+
+        val traitMap: Map<String, Trait> = traits.associateBy { trait -> trait.id }
+        val championMap: Map<String, Champion> = champions.associateBy { champion -> champion.id }
     }
 }
