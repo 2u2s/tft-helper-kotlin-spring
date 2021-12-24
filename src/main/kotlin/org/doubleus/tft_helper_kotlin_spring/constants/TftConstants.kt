@@ -166,6 +166,119 @@ class TftConstants {
         const val sniperEmblem = 2199
         const val scholarEmblem = 2200
 
+        val chemtechUrgot = ConstantDeck(
+            "chemtechUrgot",
+            listOf(
+                vi,         lissandra,  zac,        mundo,
+                urgot,      jinx,       tahmKench,  viktor,
+            ),
+            listOf(
+                mundo,      urgot,      jinx,
+            ),
+            listOf(
+                Pair(chemtech.id,   2),
+                Pair(twinshot.id,   1),
+            ),
+        )
+        val highValueJinx = ConstantDeck(
+            "highValueJinx",
+            listOf(
+                vi,         janna,      jhin,       orianna,
+                jayce,      jinx,       tahmKench,  yuumi,
+            ),
+            listOf(
+                vi,         jinx,       jayce,      yuumi,
+            ),
+            listOf(
+                Pair(sister.id,     1),
+                Pair(transformer.id,1),
+                Pair(cuddly.id,     1),
+                Pair(enchanter.id,  1),
+            ),
+        )
+        val bodyguardJhin = ConstantDeck(
+            "bodyguardJhin",
+            listOf(
+                leona,      missFortune,taric,      braum,
+                janna,      jhin,       orianna,    yuumi,
+            ),
+            listOf(
+                braum,      jhin,       orianna,    yuumi,
+            ),
+            listOf(
+                Pair(cuddly.id,     1),
+                Pair(enchanter.id,  2),
+                Pair(bodyguard.id,  1),
+                Pair(clockwork.id,  1),
+            ),
+        )
+        val sevenInnovator = ConstantDeck(
+            "sevenInnovator",
+            listOf(
+                ezreal,     singed,     zilean,     heimerdinger,
+                janna,      orianna,    seraphine,  jayce,
+            ),
+            listOf(
+                seraphine,  jayce,
+            ),
+            listOf(
+                Pair(innovator.id,  3),
+            ),
+        )
+        val socialiteAkali = ConstantDeck(
+            "socialiteAkali",
+            listOf(
+                shaco,      taric,      braum,      janna,
+                seraphine,  akali,      galio,      yuumi,
+            ),
+            listOf(
+                akali,      braum,      galio
+            ),
+            listOf(
+                Pair(socialite.id,  3),
+                Pair(assassin.id,   1),
+            ),
+        )
+        val sixArcanist = ConstantDeck(
+            "sixArcanist",
+            listOf(
+                ziggs,      swain,      malzahar,   vex,
+                janna,      lux,        viktor,     yuumi,
+            ),
+            listOf(
+                vex,        lux,
+            ),
+            listOf(
+                Pair(arcanist.id,  3),
+            ),
+        )
+        val clapio = ConstantDeck(
+            "clapio",
+            listOf(
+                blitzcrank, taric,      janna,      seraphine,
+                sion,       galio,      yuumi,
+            ),
+            listOf(
+                sion,        galio,
+            ),
+            listOf(
+                Pair(colossus.id,  1),
+            ),
+        )
+        val differentKaisa = ConstantDeck(
+            "differentKaisa",
+            listOf(
+                taric,      braum,      janna,      seraphine,
+                galio,      kaisa,      tahmKench,  yuumi,
+            ),
+            listOf(
+                galio,      kaisa,
+            ),
+            listOf(
+                Pair(socialite.id,  3),
+            ),
+        )
+
         val traits: List<Trait> = listOf(
             academy, arcanist, assassin, bodyguard,
             bruiser, challenger, chemtech, clockwork,
