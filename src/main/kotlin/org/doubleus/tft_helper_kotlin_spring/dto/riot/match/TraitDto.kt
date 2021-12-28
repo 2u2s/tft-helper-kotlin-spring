@@ -1,4 +1,4 @@
-package org.doubleus.tft_helper_kotlin_spring.dto.riot
+package org.doubleus.tft_helper_kotlin_spring.dto.riot.match
 
 import kotlinx.serialization.Serializable
 
