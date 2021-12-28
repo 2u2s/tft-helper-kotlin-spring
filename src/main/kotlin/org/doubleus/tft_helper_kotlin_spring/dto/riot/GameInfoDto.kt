@@ -1,11 +1,10 @@
 package org.doubleus.tft_helper_kotlin_spring.dto.riot
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategies
-import com.fasterxml.jackson.databind.annotation.JsonNaming
+import kotlinx.serialization.Serializable
 
-@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy::class)
+@Serializable
 data class GameInfoDto(
     val participants: List<ParticipantDto>,
-    val gameVariation: Double,
-    val tftGameType: String,
+    val game_version: String,
+    val tft_game_type: String,
 )

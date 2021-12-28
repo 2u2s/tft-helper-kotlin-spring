@@ -1,13 +1,12 @@
 package org.doubleus.tft_helper_kotlin_spring.dto.riot
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategies
-import com.fasterxml.jackson.databind.annotation.JsonNaming
+import kotlinx.serialization.Serializable
 
-@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy::class)
+@Serializable
 data class TraitDto(
     val name: String,
-    val numUnits: Int,
+    val num_units: Int,
     val style: Int,
-    val tierCurrent: Int,
-    val tierTotal: Int,
+    val tier_current: Int,
+    val tier_total: Int,
 )
