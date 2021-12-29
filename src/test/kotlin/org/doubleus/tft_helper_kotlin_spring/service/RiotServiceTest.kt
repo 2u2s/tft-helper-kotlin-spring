@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import java.time.LocalDateTime
 
 @SpringBootTest
 internal class RiotServiceTest
@@ -13,21 +12,34 @@ internal class RiotServiceTest
     private lateinit var riotService: RiotService
 
     @Test
-    fun getChallengerPuuidTest() {
+    fun getChallengerLeagueListTest() {
         val challengerLeagueDto = riotService.getChallengerLeagueList()
         assert(challengerLeagueDto.tier == "CHALLENGER")
     }
 
     @Test
-    fun getGrandmasterPuuidTest() {
+    fun getGrandmasterLeagueListTest() {
         val challengerLeagueDto = riotService.getGrandmasterLeagueList()
         assert(challengerLeagueDto.tier == "GRANDMASTER")
     }
 
     @Test
-    fun getMasterPuuidTest() {
+    fun getMasterLeagueListTest() {
         val challengerLeagueDto = riotService.getMasterLeagueList()
         assert(challengerLeagueDto.tier == "MASTER")
+    }
+
+    @Test
+    fun makePuuidsFileTest() {
+        riotService.makePuuidsFile()
+    }
+
+    @Test
+    fun getTopTierPuuidsTest() {
+        val topTierPuuids = riotService.getTopTierPuuids()
+        val challengerNumber = 300
+        val grandmasterNumber = 600
+        assert(topTierPuuids.size == (challengerNumber + grandmasterNumber))
     }
 
     @Test
