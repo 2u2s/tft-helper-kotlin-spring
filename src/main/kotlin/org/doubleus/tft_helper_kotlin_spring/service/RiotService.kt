@@ -103,24 +103,26 @@ class RiotService {
     fun getMatchInfo(matchId: String): MatchDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString(riotAsiaUrl + matchPath + "/${matchId}"))
 
 
-    private fun getRiotJsonString(uri: String): String {
-        // 오차 감안하여 sleep time에 1 더해줌.
-        val endTime = LocalDateTime.now().plusNanos((sleepTime + 1) * 1000_000)
 
+    private fun getRiotJsonString(uri: String, alternative: String = ""): String {
         val client = HttpClient.newBuilder().build()
         val request =
             HttpRequest.newBuilder()
                 .uri(URI.create(uri))
                 .headers("X-Riot-Token", tempAppKey)
                 .build()
-        val response = client.send(request, HttpResponse.BodyHandlers.ofString())
 
+        // 오차 감안하여 sleep time에 2 더해줌.
+        val endTime = LocalDateTime.now().plusNanos((sleepTime + 2) * 1000_000)
+
+        val response = client.send(request, HttpResponse.BodyHandlers.ofString())
         if (response.statusCode() < 200 || response.statusCode() >= 300) {
             when(response.statusCode()) {
                 400 -> throw Exception("Bed request.")
                 401 -> throw Exception("Unauthorized.")
                 403 -> throw Exception("Forbidden. Api key maybe expired.")
                 404 -> throw Exception("Data not found.")
+                429 -> return alternative // Api rate limit exceeding error. Should be ignored.
                 else -> throw Exception("Not normal status. status ${response.statusCode()}.")
             }
         }
