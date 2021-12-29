@@ -4,10 +4,17 @@ import org.junit.jupiter.api.Test
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import java.io.File
 
 @SpringBootTest
 internal class RiotServiceTest
 {
+    private val filePath = "./src/main/assets"
+    private val challengerPuuidFileName = "puuids_challenger.txt"
+    private val grandmasterPuuidFileName = "puuids_grandmaster.txt"
+    //private val masterPuuidFileName = "puuids_master.txt"
+    private val matchIdFileName = "match_ids.txt"
+
     @Autowired
     private lateinit var riotService: RiotService
 
@@ -30,8 +37,11 @@ internal class RiotServiceTest
     }
 
     @Test
-    fun makePuuidsFileTest() {
-        riotService.makePuuidsFile()
+    fun getMatchInfoTest() {
+        val matchDto = riotService.getMatchInfo("KR_5635478208")
+        val gameInfo = matchDto.info
+        assert(gameInfo.tft_game_type == "standard")
+        assert(gameInfo.participants.size == 8)
     }
 
     @Test
@@ -43,10 +53,15 @@ internal class RiotServiceTest
     }
 
     @Test
-    fun getMatchInfoTest() {
-        val matchDto = riotService.getMatchInfo("KR_5635478208")
-        val gameInfo = matchDto.info
-        assert(gameInfo.tft_game_type == "standard")
-        assert(gameInfo.participants.size == 8)
+    fun makePuuidsFileTest() {
+        riotService.makePuuidsFile()
+        assert(File("${filePath}/${challengerPuuidFileName}").isFile)
+        assert(File("${filePath}/${grandmasterPuuidFileName}").isFile)
+    }
+
+    @Test
+    fun makeMatchIdsFileTest() {
+        riotService.makeMatchIdsFile()
+        assert(File("${filePath}/${matchIdFileName}").isFile)
     }
 }

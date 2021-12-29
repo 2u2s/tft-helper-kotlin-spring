@@ -29,6 +29,7 @@ class RiotService {
     private val challengerPuuidFileName = "puuids_challenger.txt"
     private val grandmasterPuuidFileName = "puuids_grandmaster.txt"
     //private val masterPuuidFileName = "puuids_master.txt"
+    private val matchIdFileName = "match_ids.txt"
 
     private val tempAppKey = "RGAPI-bf157bfa-2f3e-41f1-87bc-2317703c61fa"
     private val sleepTime = 1200L
@@ -40,68 +41,47 @@ class RiotService {
 
     fun getMasterLeagueList(): LeagueListDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/master"))
 
-    fun getPuuidById(id: String): String {
-        val summonerDto = Json{ ignoreUnknownKeys=true }.decodeFromString<SummonerDto>(getRiotJsonString("${riotKrUrl}${summonerPath}/${id}"))
+    fun getPuuidById(id: String): String = Json{ ignoreUnknownKeys=true }.decodeFromString<SummonerDto>(getRiotJsonString("${riotKrUrl}${summonerPath}/${id}")).puuid
 
-        return summonerDto.puuid
-    }
+    fun getMatchIdsByPuuid(puuid: String): List<String> = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/by-puuid/${puuid}/ids", "[]"))
+
+    fun getMatchInfo(matchId: String): MatchDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/${matchId}"))
 
     fun makePuuidsFile() {
-        val challengerPuuidFile = File("${filePath}/${challengerPuuidFileName}")
-        val challengerPuuidWriter = FileWriter(challengerPuuidFile)
-        val challengers = getChallengerLeagueList().entries
-        for (summoner in challengers) {
-            challengerPuuidWriter.write("${getPuuidById(summoner.summonerId)}\n")
-        }
-        challengerPuuidWriter.close()
-
-        val grandmasterPuuidFile = File("${filePath}/${grandmasterPuuidFileName}")
-        val grandmasterPuuidWriter = FileWriter(grandmasterPuuidFile)
-        val grandmasters = getGrandmasterLeagueList().entries
-        for (summoner in grandmasters) {
-            grandmasterPuuidWriter.write("${getPuuidById(summoner.summonerId)}\n")
-        }
-        grandmasterPuuidWriter.close()
-
-        /*
-        val masterPuuidFile = File("${filePath}/${masterPuuidFileName}")
-        val masterPuuidWriter = FileWriter(masterPuuidFile)
-        val masters = getMasterLeagueList().entries
-        for (summoner in masters) {
-            masterPuuidWriter.write("${getPuuidById(summoner.summonerId)}\n")
-        }
-        masterPuuidWriter.close()
-         */
+        saveFile(File("${filePath}/${challengerPuuidFileName}"), getChallengerLeagueList().entries.map{ getPuuidById(it.summonerId) })
+        saveFile(File("${filePath}/${grandmasterPuuidFileName}"), getGrandmasterLeagueList().entries.map{ getPuuidById(it.summonerId) })
+        // saveFile(File("${filePath}/${masterPuuidFileName}"), getMasterLeagueList().entries.map{ it.summonerId })
     }
 
     fun getTopTierPuuids(): List<String> {
         val puuids = mutableListOf<String>()
 
-        var challengerPuuidFile = File("${filePath}/${challengerPuuidFileName}")
-        var grandmasterPuuidFile = File("${filePath}/${grandmasterPuuidFileName}")
-        //var masterPuuidFile = File("${filePath}/${masterPuuidFileName}")
+        fun addAllPuuidsOf(file: File) {
+            val filePuuids = file.readLines().filter(String::isNotEmpty)
+            puuids.addAll(filePuuids)
+        }
 
-
+        val challengerPuuidFile = File("${filePath}/${challengerPuuidFileName}")
+        val grandmasterPuuidFile = File("${filePath}/${grandmasterPuuidFileName}")
+        //val masterPuuidFile = File("${filePath}/${masterPuuidFileName}")
         if (!(challengerPuuidFile.isFile && grandmasterPuuidFile.isFile /*&& masterPuuidFile.isFile*/)) {
             makePuuidsFile()
         }
-        challengerPuuidFile = File("${filePath}/${challengerPuuidFileName}")
-        val challengerPuuids = challengerPuuidFile.readLines().filter { it.isNotEmpty() }
-        puuids.addAll(challengerPuuids)
 
-        grandmasterPuuidFile = File("${filePath}/${grandmasterPuuidFileName}")
-        val grandmasterPuuids = grandmasterPuuidFile.readLines().filter { it.trim().isNotEmpty() }
-        puuids.addAll(grandmasterPuuids)
-        /*
-        masterPuuidFile = File("${filePath}/${masterPuuidFileName}")
-        val masterPuuids = masterPuuidFile.readLines().filter { it.trim().isNotEmpty() }
-        puuids.addAll(masterPuuids)
-        */
+        addAllPuuidsOf(File("${filePath}/${challengerPuuidFileName}"))
+        addAllPuuidsOf(File("${filePath}/${grandmasterPuuidFileName}"))
+        // addAllPuuidsOf(File("${filePath}/${masterPuuidFileName}"))
+
         return puuids
     }
 
-    fun getMatchInfo(matchId: String): MatchDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString(riotAsiaUrl + matchPath + "/${matchId}"))
+    fun makeMatchIdsFile() {
+        val puuids = getTopTierPuuids()
+        val matchIdSet = mutableSetOf<String>()
+        puuids.forEach { puuid -> matchIdSet.addAll(getMatchIdsByPuuid(puuid)) }
 
+        saveFile(File("${filePath}/${matchIdFileName}"), matchIdSet)
+    }
 
 
     private fun getRiotJsonString(uri: String, alternative: String = ""): String {
@@ -135,5 +115,11 @@ class RiotService {
             Thread.sleep((endTimeMilli - nowMilli) % (24 * 60 * 60 * 1000))
         }
         return response.body()
+    }
+
+    private fun saveFile(file: File, lineList: Iterable<String>) {
+        val writer = FileWriter(file)
+        lineList.forEach{ line -> writer.write("${line}\n")}
+        writer.close()
     }
 }
