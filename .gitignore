@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+/src/main/assets/puuids_challenger.txt
+/src/main/assets/puuids_grandmaster.txt
+/src/main/assets/match_ids.txt
