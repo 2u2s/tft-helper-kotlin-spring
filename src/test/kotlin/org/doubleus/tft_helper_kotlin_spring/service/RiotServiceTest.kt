@@ -20,25 +20,25 @@ internal class RiotServiceTest
 
     @Test
     fun getChallengerLeagueListTest() {
-        val challengerLeagueDto = riotService.getChallengerLeagueList()
+        val challengerLeagueDto = riotService.handler.getChallengerLeagueList()
         assert(challengerLeagueDto.tier == "CHALLENGER")
     }
 
     @Test
     fun getGrandmasterLeagueListTest() {
-        val challengerLeagueDto = riotService.getGrandmasterLeagueList()
+        val challengerLeagueDto = riotService.handler.getGrandmasterLeagueList()
         assert(challengerLeagueDto.tier == "GRANDMASTER")
     }
 
     @Test
     fun getMasterLeagueListTest() {
-        val challengerLeagueDto = riotService.getMasterLeagueList()
+        val challengerLeagueDto = riotService.handler.getMasterLeagueList()
         assert(challengerLeagueDto.tier == "MASTER")
     }
 
     @Test
     fun getMatchInfoTest() {
-        val matchDto = riotService.getMatchInfo("KR_5635478208")
+        val matchDto = riotService.handler.getMatchInfo("KR_5635478208")
         val gameInfo = matchDto.info
         assert(gameInfo.tft_game_type == "standard")
         assert(gameInfo.participants.size == 8)
