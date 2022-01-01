@@ -751,7 +751,7 @@ class TftConstants {
             enforcerEmblem,     scrapEmblem,        protectorEmblem,    bruiserEmblem,
             innovatorEmblem,    sniperEmblem,       scholarEmblem,
         )
-        val decks: List<Deck> = listOf(
+        val decks: List<ConstantDeck> = listOf(
             fiveChemtech,       highValueJinx,      bodyguardJhin,      sevenInnovator,
             challengerYone,     scholarLissandra,   sixArcanist,        clapio,
             socialiteAkali,     differentKaisa,     rerollMutant,       rerollMissFortune,
@@ -761,5 +761,6 @@ class TftConstants {
 
         val traitMap: Map<String, Trait> = traits.associateBy { trait -> trait.id }
         val championMap: Map<String, Champion> = champions.associateBy { champion -> champion.id }
+        val championIndexMap: Map<String, Int> = champions.associate { it.id to champions.indexOf(it) }
     }
 }

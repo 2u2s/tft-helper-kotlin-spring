@@ -2,6 +2,11 @@ package org.doubleus.tft_helper_kotlin_spring.service
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
+import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants
+import org.doubleus.tft_helper_kotlin_spring.dto.deck.DeckStatisticResultDto
+import org.doubleus.tft_helper_kotlin_spring.dto.riot.ChampionRecommendedItemDto
+import org.doubleus.tft_helper_kotlin_spring.dto.riot.RecommendedItemInfos
+import org.doubleus.tft_helper_kotlin_spring.dto.riot.RiotStatisticResultDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.match.MatchDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.summoner.LeagueListDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.summoner.SummonerDto
@@ -15,6 +20,7 @@ import java.net.http.HttpRequest
 import java.net.http.HttpResponse
 import java.time.LocalDateTime
 import java.time.temporal.ChronoField
+import kotlin.streams.toList
 
 @Service
 class RiotService(
@@ -30,7 +36,7 @@ class RiotService(
     @Value("\${file.master-puuid}")
     private val masterPuuidFileName: String,
      */
-    @Value("\${file.grandmaster-puuid}")
+    @Value("\${file.match-ids}")
     private val matchIdFileName: String,
 ) {
 
@@ -70,6 +76,87 @@ class RiotService(
         puuids.forEach { puuid -> matchIdSet.addAll(handler.getMatchIdsByPuuid(puuid)) }
 
         saveFile(File("${filePath}/${matchIdFileName}"), matchIdSet)
+    }
+
+    fun getStatistics(start: Int=0, end: Int=0): RiotStatisticResultDto {
+        val deckStatisticInfoMap: Map<String, DeckStatisticResultDto> =
+            TftConstants.decks.associate{ deck -> deck.id to DeckStatisticResultDto(deck) }
+        val recommendedItemInfoMap: MutableMap<String, MutableMap<Int, Int>> =
+            TftConstants.champions.associate { champion -> champion.id to TftConstants.items.associateWith { 0 }.toMutableMap() }.toMutableMap()
+
+        var matchIdsFile = File("${filePath}/${matchIdFileName}")
+        if (!matchIdsFile.isFile) {
+            makeMatchIdsFile()
+            matchIdsFile = File("${filePath}/${matchIdFileName}")
+        }
+        var matchIds = matchIdsFile.readLines().filter(String::isNotEmpty)
+        if (start in 0 until end)
+            matchIds = matchIds.subList(start, end)
+
+        matchIds.forEach { matchId ->
+            try {
+                val matchInfo = handler.getMatchInfo(matchId)
+                getDeckStatistics(matchInfo, deckStatisticInfoMap)
+                getItemStatistics(matchInfo, recommendedItemInfoMap)
+            }
+            catch (ignored: Exception) { }
+        }
+
+        // extract top5 items.
+        recommendedItemInfoMap.keys.forEach { championId ->
+            val recommended = recommendedItemInfoMap[championId]
+            var sorted = recommended!!.toList().sortedBy { (_, v) -> v }.reversed()
+            val total: Int = sorted.fold(0, {acc, pair -> acc + pair.second})
+            if (sorted.size > 5)
+                sorted = sorted.subList(0, 5)
+
+            val extracted = mutableListOf(0 to total)
+            extracted.addAll(sorted)
+            recommendedItemInfoMap[championId] = extracted.associate { it.first to it.second }.toMutableMap()
+        }
+
+        return RiotStatisticResultDto(
+            deckStatisticInfoMap.values.stream().toList(),
+            recommendedItemInfoMap.map { (championId, itemInfoMap) ->
+                ChampionRecommendedItemDto(championId, itemInfoMap.map { RecommendedItemInfos(it.key, it.value) })
+            }
+        )
+    }
+
+    fun getDeckStatistics(matchInfo: MatchDto, deckStatisticInfoMap: Map<String, DeckStatisticResultDto>) {
+        val deckDefiningCriteria = 0.7
+        val completionCriteria = 0.94
+
+        val participants = matchInfo.info.participants
+        participants.forEach { participant ->
+            var deckId = "etc"
+            var similarity = 0.0
+            var completed = false
+
+            // define user's deck
+            TftConstants.decks.forEach { constantDeck ->
+                val userDeck = participant.toUserDeck()
+                val s = constantDeck.getSimilarity(userDeck)
+                val c = constantDeck.hasMainTraits(userDeck)
+                if ((s > deckDefiningCriteria) && (s > similarity)) {
+                    deckId = constantDeck.id
+                    similarity = s
+                    completed = (s >= completionCriteria) && c
+                }
+            }
+            deckStatisticInfoMap[deckId]?.accumulateData(participant.placement, completed)
+        }
+    }
+
+    fun getItemStatistics(matchInfo: MatchDto, recommendedItemInfoMap: Map<String, MutableMap<Int, Int>>) {
+        val participants = matchInfo.info.participants
+        participants.forEach { participant ->
+            val champions = participant.units
+            champions.forEach{ champion ->
+                val recommendedItemInfo = recommendedItemInfoMap[champion.character_id]!!
+                champion.items.forEach { item -> recommendedItemInfo[item] = (recommendedItemInfo[item] ?: 0) + 1}
+            }
+        }
     }
 
     private fun saveFile(file: File, lineList: Iterable<String>) {

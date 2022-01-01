@@ -1,5 +1,7 @@
 package org.doubleus.tft_helper_kotlin_spring.service
 
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import org.junit.jupiter.api.Test
 
 import org.springframework.beans.factory.annotation.Autowired
@@ -63,5 +65,11 @@ internal class RiotServiceTest
     fun makeMatchIdsFileTest() {
         riotService.makeMatchIdsFile()
         assert(File("${filePath}/${matchIdFileName}").isFile)
+    }
+
+    @Test
+    fun getStatisticsTest() {
+        val statistics = riotService.getStatistics(0, 50)
+        println(Json.encodeToString(statistics))
     }
 }
