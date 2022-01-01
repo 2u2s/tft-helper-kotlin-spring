@@ -5,6 +5,7 @@ import kotlinx.serialization.json.Json
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.match.MatchDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.summoner.LeagueListDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.summoner.SummonerDto
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Service
 import java.io.File
 import java.io.FileWriter
@@ -16,15 +17,22 @@ import java.time.LocalDateTime
 import java.time.temporal.ChronoField
 
 @Service
-class RiotService {
-
-    private val filePath = "./src/main/assets"
-    private val challengerPuuidFileName = "puuids_challenger.txt"
-    private val grandmasterPuuidFileName = "puuids_grandmaster.txt"
-    //private val masterPuuidFileName = "puuids_master.txt"
-    private val matchIdFileName = "match_ids.txt"
-
-    private val tempAppKey = "RGAPI-25033577-fe6d-46c2-8031-c780d4e96e3b"
+class RiotService(
+    @Value("\${riot.api-key}")
+    private val tempAppKey: String,
+    @Value("\${file-path}")
+    private val filePath: String,
+    @Value("\${file.challenger-puuid}")
+    private val challengerPuuidFileName: String,
+    @Value("\${file.grandmaster-puuid}")
+    private val grandmasterPuuidFileName: String,
+    /*
+    @Value("\${file.master-puuid}")
+    private val masterPuuidFileName: String,
+     */
+    @Value("\${file.grandmaster-puuid}")
+    private val matchIdFileName: String,
+) {
 
     val handler = RiotApiHandler(tempAppKey)
 
@@ -117,16 +125,18 @@ class RiotService {
             return response.body()
         }
 
-        fun getChallengerLeagueList(): LeagueListDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/challenger"))
+        private val myJson = Json { ignoreUnknownKeys = true }
 
-        fun getGrandmasterLeagueList(): LeagueListDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/grandmaster"))
+        fun getChallengerLeagueList(): LeagueListDto = myJson.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/challenger"))
 
-        fun getMasterLeagueList(): LeagueListDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/master"))
+        fun getGrandmasterLeagueList(): LeagueListDto = myJson.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/grandmaster"))
 
-        fun getPuuidById(id: String): String = Json{ ignoreUnknownKeys=true }.decodeFromString<SummonerDto>(getRiotJsonString("${riotKrUrl}${summonerPath}/${id}")).puuid
+        fun getMasterLeagueList(): LeagueListDto = myJson.decodeFromString(getRiotJsonString("${riotKrUrl}${leaguePath}/master"))
 
-        fun getMatchIdsByPuuid(puuid: String): List<String> = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/by-puuid/${puuid}/ids", "[]"))
+        fun getPuuidById(id: String): String = myJson.decodeFromString<SummonerDto>(getRiotJsonString("${riotKrUrl}${summonerPath}/${id}")).puuid
 
-        fun getMatchInfo(matchId: String): MatchDto = Json{ ignoreUnknownKeys=true }.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/${matchId}"))
+        fun getMatchIdsByPuuid(puuid: String): List<String> = myJson.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/by-puuid/${puuid}/ids", "[]"))
+
+        fun getMatchInfo(matchId: String): MatchDto = myJson.decodeFromString(getRiotJsonString("${riotAsiaUrl}${matchPath}/${matchId}"))
     }
 }
