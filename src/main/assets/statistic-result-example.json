@@ -3,148 +3,166 @@
     {
       "id": "fiveChemtech",
       "total": {
-        "game_cnt": 91,
-        "win_cnt": 8,
-        "top4_cnt": 60,
-        "rank_sum": 360
+        "game_cnt": 15578,
+        "win_cnt": 2107,
+        "top4_cnt": 8797,
+        "rank_sum": 64956
       },
       "completed": {
-        "game_cnt": 14,
-        "win_cnt": 2,
-        "top4_cnt": 12,
-        "rank_sum": 43
+        "game_cnt": 2041,
+        "win_cnt": 484,
+        "top4_cnt": 1488,
+        "rank_sum": 6685
       }
     },
     {
       "id": "highValueJinx",
       "total": {
-        "game_cnt": 13,
+        "game_cnt": 2020,
+        "win_cnt": 361,
+        "top4_cnt": 1206,
+        "rank_sum": 8018
+      },
+      "completed": {
+        "game_cnt": 26,
         "win_cnt": 4,
-        "top4_cnt": 11,
-        "rank_sum": 36
+        "top4_cnt": 16,
+        "rank_sum": 101
       }
     },
     {
       "id": "bodyguardJhin",
       "total": {
-        "game_cnt": 49,
-        "win_cnt": 9,
-        "top4_cnt": 27,
-        "rank_sum": 200
+        "game_cnt": 8621,
+        "win_cnt": 1007,
+        "top4_cnt": 4218,
+        "rank_sum": 39468
       },
       "completed": {
-        "game_cnt": 3,
-        "win_cnt": 1,
-        "top4_cnt": 3,
-        "rank_sum": 8
+        "game_cnt": 364,
+        "win_cnt": 68,
+        "top4_cnt": 255,
+        "rank_sum": 1298
       }
     },
     {
       "id": "sevenInnovator",
       "total": {
-        "game_cnt": 4,
-        "win_cnt": 0,
-        "top4_cnt": 3,
-        "rank_sum": 13
+        "game_cnt": 1540,
+        "win_cnt": 193,
+        "top4_cnt": 787,
+        "rank_sum": 6828
       },
       "completed": {
-        "game_cnt": 1,
-        "win_cnt": 0,
-        "top4_cnt": 1,
-        "rank_sum": 2
+        "game_cnt": 147,
+        "win_cnt": 37,
+        "top4_cnt": 114,
+        "rank_sum": 434
       }
     },
     {
       "id": "challengerYone",
       "total": {
-        "game_cnt": 27,
-        "win_cnt": 3,
-        "top4_cnt": 13,
-        "rank_sum": 140
+        "game_cnt": 6463,
+        "win_cnt": 894,
+        "top4_cnt": 3249,
+        "rank_sum": 29150
       },
       "completed": {
-        "game_cnt": 4,
-        "win_cnt": 1,
-        "top4_cnt": 2,
-        "rank_sum": 20
+        "game_cnt": 359,
+        "win_cnt": 73,
+        "top4_cnt": 204,
+        "rank_sum": 1446
       }
     },
     {
       "id": "scholarLissandra",
       "total": {
-        "game_cnt": 11,
-        "win_cnt": 2,
-        "top4_cnt": 3,
-        "rank_sum": 60
+        "game_cnt": 2774,
+        "win_cnt": 281,
+        "top4_cnt": 1226,
+        "rank_sum": 13222
+      },
+      "completed": {
+        "game_cnt": 20,
+        "win_cnt": 0,
+        "top4_cnt": 12,
+        "rank_sum": 89
       }
     },
     {
       "id": "sixArcanist",
       "total": {
-        "game_cnt": 9,
-        "win_cnt": 0,
-        "top4_cnt": 4,
-        "rank_sum": 42
+        "game_cnt": 2506,
+        "win_cnt": 239,
+        "top4_cnt": 1211,
+        "rank_sum": 11479
+      },
+      "completed": {
+        "game_cnt": 189,
+        "win_cnt": 36,
+        "top4_cnt": 134,
+        "rank_sum": 669
       }
     },
     {
       "id": "clapio",
       "total": {
-        "game_cnt": 30,
-        "win_cnt": 5,
-        "top4_cnt": 12,
-        "rank_sum": 145
+        "game_cnt": 3490,
+        "win_cnt": 520,
+        "top4_cnt": 1730,
+        "rank_sum": 15558
       },
       "completed": {
-        "game_cnt": 2,
-        "win_cnt": 0,
-        "top4_cnt": 0,
-        "rank_sum": 15
+        "game_cnt": 152,
+        "win_cnt": 32,
+        "top4_cnt": 75,
+        "rank_sum": 649
       }
     },
     {
       "id": "socialiteAkali",
       "total": {
-        "game_cnt": 37,
-        "win_cnt": 2,
-        "top4_cnt": 17,
-        "rank_sum": 179
+        "game_cnt": 6746,
+        "win_cnt": 687,
+        "top4_cnt": 3221,
+        "rank_sum": 31007
       },
       "completed": {
-        "game_cnt": 4,
-        "win_cnt": 0,
-        "top4_cnt": 3,
-        "rank_sum": 15
+        "game_cnt": 701,
+        "win_cnt": 89,
+        "top4_cnt": 386,
+        "rank_sum": 2961
       }
     },
     {
       "id": "differentKaisa",
       "total": {
-        "game_cnt": 48,
-        "win_cnt": 6,
-        "top4_cnt": 18,
-        "rank_sum": 236
+        "game_cnt": 7973,
+        "win_cnt": 1313,
+        "top4_cnt": 4110,
+        "rank_sum": 34717
       },
       "completed": {
-        "game_cnt": 1,
-        "win_cnt": 0,
-        "top4_cnt": 0,
-        "rank_sum": 6
+        "game_cnt": 746,
+        "win_cnt": 120,
+        "top4_cnt": 397,
+        "rank_sum": 3148
       }
     },
     {
       "id": "rerollMutant",
       "total": {
-        "game_cnt": 22,
-        "win_cnt": 4,
-        "top4_cnt": 9,
-        "rank_sum": 102
+        "game_cnt": 3124,
+        "win_cnt": 445,
+        "top4_cnt": 1419,
+        "rank_sum": 14694
       },
       "completed": {
-        "game_cnt": 3,
-        "win_cnt": 1,
-        "top4_cnt": 2,
-        "rank_sum": 8
+        "game_cnt": 555,
+        "win_cnt": 125,
+        "top4_cnt": 329,
+        "rank_sum": 2192
       }
     },
     {
@@ -153,49 +171,61 @@
     {
       "id": "rerollGaKaGCaiKo",
       "total": {
-        "game_cnt": 19,
-        "win_cnt": 4,
-        "top4_cnt": 11,
-        "rank_sum": 74
+        "game_cnt": 3242,
+        "win_cnt": 316,
+        "top4_cnt": 1706,
+        "rank_sum": 14217
       },
       "completed": {
-        "game_cnt": 2,
-        "win_cnt": 1,
-        "top4_cnt": 2,
-        "rank_sum": 4
+        "game_cnt": 441,
+        "win_cnt": 31,
+        "top4_cnt": 201,
+        "rank_sum": 2064
       }
     },
     {
       "id": "rerollTrundle",
       "total": {
-        "game_cnt": 4,
-        "win_cnt": 0,
-        "top4_cnt": 0,
-        "rank_sum": 23
+        "game_cnt": 575,
+        "win_cnt": 53,
+        "top4_cnt": 274,
+        "rank_sum": 2598
+      },
+      "completed": {
+        "game_cnt": 8,
+        "win_cnt": 1,
+        "top4_cnt": 6,
+        "rank_sum": 25
       }
     },
     {
       "id": "rerollKatarina",
       "total": {
-        "game_cnt": 11,
+        "game_cnt": 1760,
+        "win_cnt": 120,
+        "top4_cnt": 776,
+        "rank_sum": 8541
+      },
+      "completed": {
+        "game_cnt": 6,
         "win_cnt": 0,
-        "top4_cnt": 4,
-        "rank_sum": 55
+        "top4_cnt": 3,
+        "rank_sum": 29
       }
     },
     {
       "id": "rerollYordle",
       "total": {
-        "game_cnt": 1,
-        "win_cnt": 0,
-        "top4_cnt": 1,
-        "rank_sum": 2
+        "game_cnt": 634,
+        "win_cnt": 30,
+        "top4_cnt": 180,
+        "rank_sum": 3570
       },
       "completed": {
-        "game_cnt": 1,
-        "win_cnt": 0,
-        "top4_cnt": 1,
-        "rank_sum": 2
+        "game_cnt": 162,
+        "win_cnt": 20,
+        "top4_cnt": 91,
+        "rank_sum": 671
       }
     }
   ],
@@ -204,24 +234,28 @@
       "championId": "TFT6_Graves",
       "itemInfos": [
         {
-          "itemId": 2190,
-          "cnt": 2
+          "itemId": 0,
+          "cnt": 2990
         },
         {
-          "itemId": 2199,
-          "cnt": 1
+          "itemId": 2190,
+          "cnt": 359
         },
         {
           "itemId": 2196,
-          "cnt": 1
+          "cnt": 290
         },
         {
           "itemId": 99,
-          "cnt": 1
+          "cnt": 218
         },
         {
-          "itemId": 79,
-          "cnt": 1
+          "itemId": 37,
+          "cnt": 128
+        },
+        {
+          "itemId": 59,
+          "cnt": 103
         }
       ]
     },
@@ -229,24 +263,28 @@
       "championId": "TFT6_Singed",
       "itemInfos": [
         {
-          "itemId": 89,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1695
         },
         {
-          "itemId": 59,
-          "cnt": 1
-        },
-        {
-          "itemId": 45,
-          "cnt": 1
+          "itemId": 55,
+          "cnt": 110
         },
         {
           "itemId": 36,
-          "cnt": 1
+          "cnt": 110
         },
         {
-          "itemId": 2200,
-          "cnt": 0
+          "itemId": 56,
+          "cnt": 107
+        },
+        {
+          "itemId": 47,
+          "cnt": 92
+        },
+        {
+          "itemId": 57,
+          "cnt": 87
         }
       ]
     },
@@ -254,24 +292,28 @@
       "championId": "TFT6_Twitch",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 1728
+        },
+        {
           "itemId": 19,
-          "cnt": 2
+          "cnt": 425
         },
         {
           "itemId": 29,
-          "cnt": 1
+          "cnt": 340
         },
         {
           "itemId": 26,
-          "cnt": 1
+          "cnt": 298
         },
         {
           "itemId": 12,
-          "cnt": 1
+          "cnt": 104
         },
         {
-          "itemId": 2200,
-          "cnt": 0
+          "itemId": 11,
+          "cnt": 83
         }
       ]
     },
@@ -279,24 +321,28 @@
       "championId": "TFT6_Camille",
       "itemInfos": [
         {
-          "itemId": 55,
-          "cnt": 2
-        },
-        {
-          "itemId": 77,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1962
         },
         {
           "itemId": 67,
-          "cnt": 1
+          "cnt": 162
+        },
+        {
+          "itemId": 59,
+          "cnt": 112
+        },
+        {
+          "itemId": 55,
+          "cnt": 96
+        },
+        {
+          "itemId": 77,
+          "cnt": 95
         },
         {
           "itemId": 37,
-          "cnt": 1
-        },
-        {
-          "itemId": 34,
-          "cnt": 1
+          "cnt": 88
         }
       ]
     },
@@ -304,24 +350,28 @@
       "championId": "TFT6_Illaoi",
       "itemInfos": [
         {
-          "itemId": 2200,
-          "cnt": 0
+          "itemId": 0,
+          "cnt": 661
         },
         {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 55,
+          "cnt": 48
         },
         {
-          "itemId": 2198,
-          "cnt": 0
+          "itemId": 99,
+          "cnt": 47
         },
         {
-          "itemId": 2197,
-          "cnt": 0
+          "itemId": 77,
+          "cnt": 40
         },
         {
-          "itemId": 2196,
-          "cnt": 0
+          "itemId": 67,
+          "cnt": 36
+        },
+        {
+          "itemId": 66,
+          "cnt": 36
         }
       ]
     },
@@ -329,24 +379,28 @@
       "championId": "TFT6_TwistedFate",
       "itemInfos": [
         {
-          "itemId": 89,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 903
         },
         {
-          "itemId": 49,
-          "cnt": 1
+          "itemId": 37,
+          "cnt": 181
+        },
+        {
+          "itemId": 44,
+          "cnt": 77
+        },
+        {
+          "itemId": 34,
+          "cnt": 72
         },
         {
           "itemId": 15,
-          "cnt": 1
+          "cnt": 66
         },
         {
-          "itemId": 2200,
-          "cnt": 0
-        },
-        {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 39,
+          "cnt": 46
         }
       ]
     },
@@ -354,24 +408,28 @@
       "championId": "TFT6_Caitlyn",
       "itemInfos": [
         {
-          "itemId": 79,
-          "cnt": 5
-        },
-        {
-          "itemId": 2190,
-          "cnt": 2
+          "itemId": 0,
+          "cnt": 4713
         },
         {
           "itemId": 14,
-          "cnt": 2
+          "cnt": 668
         },
         {
-          "itemId": 2196,
-          "cnt": 1
+          "itemId": 79,
+          "cnt": 547
         },
         {
-          "itemId": 2195,
-          "cnt": 1
+          "itemId": 2190,
+          "cnt": 376
+        },
+        {
+          "itemId": 17,
+          "cnt": 313
+        },
+        {
+          "itemId": 23,
+          "cnt": 213
         }
       ]
     },
@@ -379,24 +437,28 @@
       "championId": "TFT6_Darius",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 1347
+        },
+        {
+          "itemId": 56,
+          "cnt": 92
+        },
+        {
+          "itemId": 77,
+          "cnt": 88
+        },
+        {
+          "itemId": 89,
+          "cnt": 86
+        },
+        {
           "itemId": 59,
-          "cnt": 2
+          "cnt": 85
         },
         {
-          "itemId": 66,
-          "cnt": 1
-        },
-        {
-          "itemId": 57,
-          "cnt": 1
-        },
-        {
-          "itemId": 2200,
-          "cnt": 0
-        },
-        {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 55,
+          "cnt": 74
         }
       ]
     },
@@ -404,24 +466,28 @@
       "championId": "TFT6_Garen",
       "itemInfos": [
         {
-          "itemId": 2190,
-          "cnt": 4
-        },
-        {
-          "itemId": 99,
-          "cnt": 3
-        },
-        {
-          "itemId": 57,
-          "cnt": 3
+          "itemId": 0,
+          "cnt": 6674
         },
         {
           "itemId": 55,
-          "cnt": 3
+          "cnt": 938
         },
         {
           "itemId": 77,
-          "cnt": 2
+          "cnt": 931
+        },
+        {
+          "itemId": 16,
+          "cnt": 843
+        },
+        {
+          "itemId": 2190,
+          "cnt": 594
+        },
+        {
+          "itemId": 47,
+          "cnt": 427
         }
       ]
     },
@@ -429,24 +495,28 @@
       "championId": "TFT6_Ezreal",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 1598
+        },
+        {
+          "itemId": 24,
+          "cnt": 248
+        },
+        {
+          "itemId": 2,
+          "cnt": 109
+        },
+        {
           "itemId": 29,
-          "cnt": 1
+          "cnt": 96
         },
         {
-          "itemId": 28,
-          "cnt": 1
+          "itemId": 19,
+          "cnt": 91
         },
         {
-          "itemId": 26,
-          "cnt": 1
-        },
-        {
-          "itemId": 2200,
-          "cnt": 0
-        },
-        {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 1,
+          "cnt": 78
         }
       ]
     },
@@ -454,24 +524,28 @@
       "championId": "TFT6_Ziggs",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 1279
+        },
+        {
           "itemId": 79,
-          "cnt": 1
-        },
-        {
-          "itemId": 37,
-          "cnt": 1
-        },
-        {
-          "itemId": 33,
-          "cnt": 1
-        },
-        {
-          "itemId": 4,
-          "cnt": 1
+          "cnt": 78
         },
         {
           "itemId": 2200,
-          "cnt": 0
+          "cnt": 74
+        },
+        {
+          "itemId": 24,
+          "cnt": 71
+        },
+        {
+          "itemId": 2,
+          "cnt": 71
+        },
+        {
+          "itemId": 4,
+          "cnt": 65
         }
       ]
     },
@@ -479,24 +553,28 @@
       "championId": "TFT6_Poppy",
       "itemInfos": [
         {
-          "itemId": 2191,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1053
         },
         {
-          "itemId": 69,
-          "cnt": 1
+          "itemId": 56,
+          "cnt": 97
+        },
+        {
+          "itemId": 66,
+          "cnt": 95
         },
         {
           "itemId": 55,
-          "cnt": 1
+          "cnt": 91
         },
         {
-          "itemId": 17,
-          "cnt": 1
+          "itemId": 47,
+          "cnt": 67
         },
         {
-          "itemId": 2200,
-          "cnt": 0
+          "itemId": 77,
+          "cnt": 65
         }
       ]
     },
@@ -504,24 +582,28 @@
       "championId": "TFT6_Kassadin",
       "itemInfos": [
         {
-          "itemId": 77,
-          "cnt": 10
+          "itemId": 0,
+          "cnt": 7213
         },
         {
           "itemId": 55,
-          "cnt": 10
+          "cnt": 958
+        },
+        {
+          "itemId": 77,
+          "cnt": 850
         },
         {
           "itemId": 47,
-          "cnt": 7
+          "cnt": 606
         },
         {
           "itemId": 36,
-          "cnt": 6
+          "cnt": 498
         },
         {
-          "itemId": 25,
-          "cnt": 3
+          "itemId": 66,
+          "cnt": 461
         }
       ]
     },
@@ -529,24 +611,28 @@
       "championId": "TFT6_Katarina",
       "itemInfos": [
         {
-          "itemId": 79,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1329
         },
         {
-          "itemId": 67,
-          "cnt": 1
-        },
-        {
-          "itemId": 44,
-          "cnt": 1
+          "itemId": 19,
+          "cnt": 227
         },
         {
           "itemId": 36,
-          "cnt": 1
+          "cnt": 184
         },
         {
-          "itemId": 28,
-          "cnt": 1
+          "itemId": 44,
+          "cnt": 128
+        },
+        {
+          "itemId": 49,
+          "cnt": 123
+        },
+        {
+          "itemId": 15,
+          "cnt": 83
         }
       ]
     },
@@ -554,24 +640,28 @@
       "championId": "TFT6_Warwick",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 3210
+        },
+        {
           "itemId": 69,
-          "cnt": 4
+          "cnt": 365
         },
         {
           "itemId": 25,
-          "cnt": 3
-        },
-        {
-          "itemId": 23,
-          "cnt": 3
+          "cnt": 301
         },
         {
           "itemId": 24,
-          "cnt": 2
+          "cnt": 289
         },
         {
-          "itemId": 17,
-          "cnt": 2
+          "itemId": 23,
+          "cnt": 253
+        },
+        {
+          "itemId": 67,
+          "cnt": 157
         }
       ]
     },
@@ -579,24 +669,28 @@
       "championId": "TFT6_Zyra",
       "itemInfos": [
         {
-          "itemId": 14,
-          "cnt": 3
+          "itemId": 0,
+          "cnt": 2478
         },
         {
-          "itemId": 79,
-          "cnt": 2
-        },
-        {
-          "itemId": 59,
-          "cnt": 2
+          "itemId": 89,
+          "cnt": 322
         },
         {
           "itemId": 24,
-          "cnt": 2
+          "cnt": 224
         },
         {
-          "itemId": 2193,
-          "cnt": 1
+          "itemId": 67,
+          "cnt": 156
+        },
+        {
+          "itemId": 37,
+          "cnt": 130
+        },
+        {
+          "itemId": 79,
+          "cnt": 127
         }
       ]
     },
@@ -604,24 +698,28 @@
       "championId": "TFT6_Swain",
       "itemInfos": [
         {
-          "itemId": 58,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1303
+        },
+        {
+          "itemId": 77,
+          "cnt": 75
+        },
+        {
+          "itemId": 56,
+          "cnt": 67
+        },
+        {
+          "itemId": 66,
+          "cnt": 65
+        },
+        {
+          "itemId": 55,
+          "cnt": 61
         },
         {
           "itemId": 2200,
-          "cnt": 0
-        },
-        {
-          "itemId": 2199,
-          "cnt": 0
-        },
-        {
-          "itemId": 2198,
-          "cnt": 0
-        },
-        {
-          "itemId": 2197,
-          "cnt": 0
+          "cnt": 58
         }
       ]
     },
@@ -629,24 +727,28 @@
       "championId": "TFT6_Vi",
       "itemInfos": [
         {
-          "itemId": 78,
-          "cnt": 5
+          "itemId": 0,
+          "cnt": 5192
         },
         {
-          "itemId": 2192,
-          "cnt": 3
+          "itemId": 78,
+          "cnt": 544
         },
         {
           "itemId": 67,
-          "cnt": 2
+          "cnt": 389
         },
         {
-          "itemId": 57,
-          "cnt": 2
+          "itemId": 59,
+          "cnt": 385
+        },
+        {
+          "itemId": 99,
+          "cnt": 290
         },
         {
           "itemId": 37,
-          "cnt": 2
+          "cnt": 240
         }
       ]
     },
@@ -654,24 +756,28 @@
       "championId": "TFT6_Zilean",
       "itemInfos": [
         {
-          "itemId": 46,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 540
+        },
+        {
+          "itemId": 79,
+          "cnt": 67
+        },
+        {
+          "itemId": 67,
+          "cnt": 44
         },
         {
           "itemId": 2200,
-          "cnt": 0
+          "cnt": 34
         },
         {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 46,
+          "cnt": 34
         },
         {
-          "itemId": 2198,
-          "cnt": 0
-        },
-        {
-          "itemId": 2197,
-          "cnt": 0
+          "itemId": 17,
+          "cnt": 31
         }
       ]
     },
@@ -679,24 +785,28 @@
       "championId": "TFT6_Blitzcrank",
       "itemInfos": [
         {
-          "itemId": 59,
-          "cnt": 8
+          "itemId": 0,
+          "cnt": 7447
         },
         {
           "itemId": 67,
-          "cnt": 6
+          "cnt": 730
+        },
+        {
+          "itemId": 6,
+          "cnt": 587
+        },
+        {
+          "itemId": 59,
+          "cnt": 537
         },
         {
           "itemId": 5,
-          "cnt": 5
+          "cnt": 467
         },
         {
-          "itemId": 66,
-          "cnt": 4
-        },
-        {
-          "itemId": 25,
-          "cnt": 3
+          "itemId": 7,
+          "cnt": 450
         }
       ]
     },
@@ -704,24 +814,28 @@
       "championId": "TFT6_Trundle",
       "itemInfos": [
         {
-          "itemId": 69,
-          "cnt": 2
+          "itemId": 0,
+          "cnt": 3081
         },
         {
-          "itemId": 67,
-          "cnt": 2
+          "itemId": 16,
+          "cnt": 300
+        },
+        {
+          "itemId": 69,
+          "cnt": 244
         },
         {
           "itemId": 23,
-          "cnt": 2
+          "cnt": 213
         },
         {
-          "itemId": 88,
-          "cnt": 1
+          "itemId": 26,
+          "cnt": 171
         },
         {
-          "itemId": 47,
-          "cnt": 1
+          "itemId": 6,
+          "cnt": 138
         }
       ]
     },
@@ -729,24 +843,28 @@
       "championId": "TFT6_Lulu",
       "itemInfos": [
         {
-          "itemId": 2199,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1220
         },
         {
-          "itemId": 59,
-          "cnt": 1
-        },
-        {
-          "itemId": 38,
-          "cnt": 1
+          "itemId": 79,
+          "cnt": 139
         },
         {
           "itemId": 2200,
-          "cnt": 0
+          "cnt": 93
         },
         {
-          "itemId": 2198,
-          "cnt": 0
+          "itemId": 46,
+          "cnt": 71
+        },
+        {
+          "itemId": 67,
+          "cnt": 67
+        },
+        {
+          "itemId": 58,
+          "cnt": 64
         }
       ]
     },
@@ -754,24 +872,28 @@
       "championId": "TFT6_Tristana",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 3186
+        },
+        {
           "itemId": 29,
-          "cnt": 4
+          "cnt": 625
         },
         {
           "itemId": 23,
-          "cnt": 2
+          "cnt": 573
         },
         {
           "itemId": 19,
-          "cnt": 2
+          "cnt": 572
         },
         {
           "itemId": 12,
-          "cnt": 2
+          "cnt": 434
         },
         {
           "itemId": 11,
-          "cnt": 1
+          "cnt": 141
         }
       ]
     },
@@ -779,24 +901,28 @@
       "championId": "TFT6_Quinn",
       "itemInfos": [
         {
-          "itemId": 14,
-          "cnt": 4
+          "itemId": 0,
+          "cnt": 2102
         },
         {
-          "itemId": 2194,
-          "cnt": 1
+          "itemId": 14,
+          "cnt": 217
         },
         {
           "itemId": 67,
-          "cnt": 1
+          "cnt": 198
+        },
+        {
+          "itemId": 24,
+          "cnt": 160
         },
         {
           "itemId": 37,
-          "cnt": 1
+          "cnt": 143
         },
         {
-          "itemId": 26,
-          "cnt": 1
+          "itemId": 4,
+          "cnt": 85
         }
       ]
     },
@@ -804,24 +930,28 @@
       "championId": "TFT6_Talon",
       "itemInfos": [
         {
-          "itemId": 68,
-          "cnt": 1
-        },
-        {
-          "itemId": 45,
-          "cnt": 1
-        },
-        {
-          "itemId": 22,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 1394
         },
         {
           "itemId": 19,
-          "cnt": 1
+          "cnt": 210
+        },
+        {
+          "itemId": 22,
+          "cnt": 195
+        },
+        {
+          "itemId": 49,
+          "cnt": 84
         },
         {
           "itemId": 13,
-          "cnt": 1
+          "cnt": 81
+        },
+        {
+          "itemId": 15,
+          "cnt": 71
         }
       ]
     },
@@ -829,24 +959,28 @@
       "championId": "TFT6_KogMaw",
       "itemInfos": [
         {
-          "itemId": 24,
-          "cnt": 14
+          "itemId": 0,
+          "cnt": 12006
         },
         {
           "itemId": 23,
-          "cnt": 13
+          "cnt": 2602
         },
         {
-          "itemId": 69,
-          "cnt": 6
+          "itemId": 24,
+          "cnt": 2033
         },
         {
           "itemId": 12,
-          "cnt": 5
+          "cnt": 1242
         },
         {
-          "itemId": 2196,
-          "cnt": 3
+          "itemId": 69,
+          "cnt": 884
+        },
+        {
+          "itemId": 49,
+          "cnt": 704
         }
       ]
     },
@@ -854,24 +988,28 @@
       "championId": "TFT6_Leona",
       "itemInfos": [
         {
-          "itemId": 66,
-          "cnt": 7
+          "itemId": 0,
+          "cnt": 10413
         },
         {
           "itemId": 55,
-          "cnt": 5
+          "cnt": 957
         },
         {
-          "itemId": 57,
-          "cnt": 4
+          "itemId": 56,
+          "cnt": 903
         },
         {
           "itemId": 47,
-          "cnt": 4
+          "cnt": 828
+        },
+        {
+          "itemId": 66,
+          "cnt": 800
         },
         {
           "itemId": 77,
-          "cnt": 3
+          "cnt": 750
         }
       ]
     },
@@ -879,24 +1017,28 @@
       "championId": "TFT6_Lissandra",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 23096
+        },
+        {
           "itemId": 37,
-          "cnt": 59
-        },
-        {
-          "itemId": 2197,
-          "cnt": 8
-        },
-        {
-          "itemId": 59,
-          "cnt": 4
+          "cnt": 10521
         },
         {
           "itemId": 34,
-          "cnt": 4
+          "cnt": 822
         },
         {
-          "itemId": 79,
-          "cnt": 3
+          "itemId": 36,
+          "cnt": 820
+        },
+        {
+          "itemId": 2197,
+          "cnt": 790
+        },
+        {
+          "itemId": 44,
+          "cnt": 714
         }
       ]
     },
@@ -904,24 +1046,28 @@
       "championId": "TFT6_Zac",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 9044
+        },
+        {
           "itemId": 99,
-          "cnt": 10
+          "cnt": 1171
         },
         {
           "itemId": 59,
-          "cnt": 4
-        },
-        {
-          "itemId": 35,
-          "cnt": 4
+          "cnt": 615
         },
         {
           "itemId": 67,
-          "cnt": 3
+          "cnt": 393
         },
         {
-          "itemId": 17,
-          "cnt": 3
+          "itemId": 47,
+          "cnt": 367
+        },
+        {
+          "itemId": 36,
+          "cnt": 328
         }
       ]
     },
@@ -929,24 +1075,28 @@
       "championId": "TFT6_Samira",
       "itemInfos": [
         {
-          "itemId": 79,
-          "cnt": 2
+          "itemId": 0,
+          "cnt": 2865
+        },
+        {
+          "itemId": 19,
+          "cnt": 322
+        },
+        {
+          "itemId": 29,
+          "cnt": 310
+        },
+        {
+          "itemId": 26,
+          "cnt": 208
+        },
+        {
+          "itemId": 16,
+          "cnt": 198
         },
         {
           "itemId": 89,
-          "cnt": 1
-        },
-        {
-          "itemId": 67,
-          "cnt": 1
-        },
-        {
-          "itemId": 59,
-          "cnt": 1
-        },
-        {
-          "itemId": 35,
-          "cnt": 1
+          "cnt": 158
         }
       ]
     },
@@ -954,24 +1104,28 @@
       "championId": "TFT6_MissFortune",
       "itemInfos": [
         {
-          "itemId": 37,
-          "cnt": 7
+          "itemId": 0,
+          "cnt": 7722
         },
         {
           "itemId": 34,
-          "cnt": 6
+          "cnt": 865
         },
         {
-          "itemId": 24,
-          "cnt": 4
+          "itemId": 37,
+          "cnt": 840
         },
         {
           "itemId": 39,
-          "cnt": 3
+          "cnt": 607
         },
         {
-          "itemId": 33,
-          "cnt": 3
+          "itemId": 14,
+          "cnt": 583
+        },
+        {
+          "itemId": 79,
+          "cnt": 531
         }
       ]
     },
@@ -979,24 +1133,28 @@
       "championId": "TFT6_Gangplank",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 2344
+        },
+        {
+          "itemId": 19,
+          "cnt": 205
+        },
+        {
           "itemId": 15,
-          "cnt": 2
-        },
-        {
-          "itemId": 2194,
-          "cnt": 1
-        },
-        {
-          "itemId": 99,
-          "cnt": 1
-        },
-        {
-          "itemId": 79,
-          "cnt": 1
+          "cnt": 192
         },
         {
           "itemId": 78,
-          "cnt": 1
+          "cnt": 186
+        },
+        {
+          "itemId": 26,
+          "cnt": 136
+        },
+        {
+          "itemId": 29,
+          "cnt": 132
         }
       ]
     },
@@ -1004,24 +1162,28 @@
       "championId": "TFT6_Malzahar",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 9506
+        },
+        {
           "itemId": 37,
-          "cnt": 15
+          "cnt": 1217
         },
         {
           "itemId": 13,
-          "cnt": 9
+          "cnt": 1158
         },
         {
           "itemId": 44,
-          "cnt": 6
+          "cnt": 997
+        },
+        {
+          "itemId": 39,
+          "cnt": 725
         },
         {
           "itemId": 34,
-          "cnt": 5
-        },
-        {
-          "itemId": 12,
-          "cnt": 5
+          "cnt": 697
         }
       ]
     },
@@ -1029,24 +1191,28 @@
       "championId": "TFT6_ChoGath",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 9220
+        },
+        {
           "itemId": 47,
-          "cnt": 9
+          "cnt": 1879
         },
         {
           "itemId": 55,
-          "cnt": 8
-        },
-        {
-          "itemId": 2196,
-          "cnt": 7
+          "cnt": 1317
         },
         {
           "itemId": 25,
-          "cnt": 6
+          "cnt": 1170
+        },
+        {
+          "itemId": 2196,
+          "cnt": 971
         },
         {
           "itemId": 66,
-          "cnt": 5
+          "cnt": 838
         }
       ]
     },
@@ -1054,24 +1220,28 @@
       "championId": "TFT6_Vex",
       "itemInfos": [
         {
-          "itemId": 36,
-          "cnt": 6
-        },
-        {
-          "itemId": 69,
-          "cnt": 5
-        },
-        {
-          "itemId": 66,
-          "cnt": 5
+          "itemId": 0,
+          "cnt": 9308
         },
         {
           "itemId": 55,
-          "cnt": 5
+          "cnt": 1233
+        },
+        {
+          "itemId": 56,
+          "cnt": 1128
+        },
+        {
+          "itemId": 77,
+          "cnt": 1040
+        },
+        {
+          "itemId": 66,
+          "cnt": 930
         },
         {
           "itemId": 25,
-          "cnt": 5
+          "cnt": 860
         }
       ]
     },
@@ -1079,24 +1249,28 @@
       "championId": "TFT6_Heimerdinger",
       "itemInfos": [
         {
-          "itemId": 79,
-          "cnt": 2
-        },
-        {
-          "itemId": 99,
-          "cnt": 1
-        },
-        {
-          "itemId": 46,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 3389
         },
         {
           "itemId": 44,
-          "cnt": 1
+          "cnt": 557
+        },
+        {
+          "itemId": 39,
+          "cnt": 468
+        },
+        {
+          "itemId": 13,
+          "cnt": 294
         },
         {
           "itemId": 34,
-          "cnt": 1
+          "cnt": 234
+        },
+        {
+          "itemId": 38,
+          "cnt": 151
         }
       ]
     },
@@ -1104,24 +1278,28 @@
       "championId": "TFT6_Taric",
       "itemInfos": [
         {
-          "itemId": 59,
-          "cnt": 9
-        },
-        {
-          "itemId": 79,
-          "cnt": 7
+          "itemId": 0,
+          "cnt": 15567
         },
         {
           "itemId": 58,
-          "cnt": 7
+          "cnt": 1147
+        },
+        {
+          "itemId": 59,
+          "cnt": 1012
         },
         {
           "itemId": 2200,
-          "cnt": 6
+          "cnt": 877
         },
         {
-          "itemId": 57,
-          "cnt": 6
+          "itemId": 67,
+          "cnt": 866
+        },
+        {
+          "itemId": 79,
+          "cnt": 631
         }
       ]
     },
@@ -1129,24 +1307,28 @@
       "championId": "TFT6_Shaco",
       "itemInfos": [
         {
-          "itemId": 16,
-          "cnt": 7
+          "itemId": 0,
+          "cnt": 9069
         },
         {
           "itemId": 19,
-          "cnt": 6
-        },
-        {
-          "itemId": 23,
-          "cnt": 5
-        },
-        {
-          "itemId": 79,
-          "cnt": 4
+          "cnt": 1333
         },
         {
           "itemId": 29,
-          "cnt": 4
+          "cnt": 1249
+        },
+        {
+          "itemId": 26,
+          "cnt": 941
+        },
+        {
+          "itemId": 22,
+          "cnt": 602
+        },
+        {
+          "itemId": 23,
+          "cnt": 436
         }
       ]
     },
@@ -1154,24 +1336,28 @@
       "championId": "TFT6_Ekko",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 5393
+        },
+        {
           "itemId": 37,
-          "cnt": 8
+          "cnt": 1226
         },
         {
           "itemId": 45,
-          "cnt": 5
+          "cnt": 522
+        },
+        {
+          "itemId": 7,
+          "cnt": 256
+        },
+        {
+          "itemId": 4,
+          "cnt": 237
         },
         {
           "itemId": 68,
-          "cnt": 2
-        },
-        {
-          "itemId": 59,
-          "cnt": 2
-        },
-        {
-          "itemId": 14,
-          "cnt": 2
+          "cnt": 236
         }
       ]
     },
@@ -1179,24 +1365,28 @@
       "championId": "TFT6_DrMundo",
       "itemInfos": [
         {
-          "itemId": 77,
-          "cnt": 21
-        },
-        {
-          "itemId": 66,
-          "cnt": 17
-        },
-        {
-          "itemId": 56,
-          "cnt": 16
-        },
-        {
-          "itemId": 47,
-          "cnt": 15
+          "itemId": 0,
+          "cnt": 28894
         },
         {
           "itemId": 55,
-          "cnt": 14
+          "cnt": 3005
+        },
+        {
+          "itemId": 77,
+          "cnt": 2685
+        },
+        {
+          "itemId": 47,
+          "cnt": 2553
+        },
+        {
+          "itemId": 66,
+          "cnt": 2522
+        },
+        {
+          "itemId": 56,
+          "cnt": 1976
         }
       ]
     },
@@ -1204,24 +1394,28 @@
       "championId": "TFT6_Lux",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 8261
+        },
+        {
           "itemId": 39,
-          "cnt": 11
+          "cnt": 2233
         },
         {
           "itemId": 44,
-          "cnt": 8
+          "cnt": 1991
         },
         {
           "itemId": 19,
-          "cnt": 7
+          "cnt": 1421
         },
         {
           "itemId": 12,
-          "cnt": 4
+          "cnt": 404
         },
         {
-          "itemId": 33,
-          "cnt": 2
+          "itemId": 34,
+          "cnt": 315
         }
       ]
     },
@@ -1229,24 +1423,28 @@
       "championId": "TFT6_Yone",
       "itemInfos": [
         {
-          "itemId": 29,
-          "cnt": 25
-        },
-        {
-          "itemId": 26,
-          "cnt": 24
+          "itemId": 0,
+          "cnt": 21033
         },
         {
           "itemId": 15,
-          "cnt": 19
+          "cnt": 5363
+        },
+        {
+          "itemId": 26,
+          "cnt": 5285
+        },
+        {
+          "itemId": 29,
+          "cnt": 4547
+        },
+        {
+          "itemId": 23,
+          "cnt": 990
         },
         {
           "itemId": 69,
-          "cnt": 5
-        },
-        {
-          "itemId": 19,
-          "cnt": 3
+          "cnt": 956
         }
       ]
     },
@@ -1254,24 +1452,28 @@
       "championId": "TFT6_Orianna",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 26240
+        },
+        {
           "itemId": 14,
-          "cnt": 21
+          "cnt": 2502
         },
         {
           "itemId": 24,
-          "cnt": 20
+          "cnt": 2317
         },
         {
           "itemId": 34,
-          "cnt": 12
-        },
-        {
-          "itemId": 37,
-          "cnt": 11
+          "cnt": 2248
         },
         {
           "itemId": 79,
-          "cnt": 10
+          "cnt": 1643
+        },
+        {
+          "itemId": 37,
+          "cnt": 1366
         }
       ]
     },
@@ -1279,24 +1481,28 @@
       "championId": "TFT6_Jhin",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 26534
+        },
+        {
           "itemId": 29,
-          "cnt": 34
+          "cnt": 7110
         },
         {
           "itemId": 19,
-          "cnt": 34
+          "cnt": 6700
         },
         {
           "itemId": 12,
-          "cnt": 27
+          "cnt": 5190
         },
         {
-          "itemId": 69,
-          "cnt": 11
+          "itemId": 26,
+          "cnt": 1150
         },
         {
           "itemId": 15,
-          "cnt": 8
+          "cnt": 1104
         }
       ]
     },
@@ -1304,24 +1510,28 @@
       "championId": "TFT6_Seraphine",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 29275
+        },
+        {
           "itemId": 37,
-          "cnt": 36
+          "cnt": 5909
         },
         {
           "itemId": 24,
-          "cnt": 28
+          "cnt": 3640
         },
         {
           "itemId": 14,
-          "cnt": 17
+          "cnt": 2876
         },
         {
           "itemId": 34,
-          "cnt": 10
+          "cnt": 1382
         },
         {
-          "itemId": 99,
-          "cnt": 5
+          "itemId": 69,
+          "cnt": 1066
         }
       ]
     },
@@ -1329,24 +1539,28 @@
       "championId": "TFT6_Sion",
       "itemInfos": [
         {
-          "itemId": 37,
-          "cnt": 7
+          "itemId": 0,
+          "cnt": 14822
         },
         {
           "itemId": 56,
-          "cnt": 5
+          "cnt": 1506
         },
         {
           "itemId": 55,
-          "cnt": 5
+          "cnt": 1283
         },
         {
-          "itemId": 2190,
-          "cnt": 4
+          "itemId": 37,
+          "cnt": 1227
         },
         {
-          "itemId": 99,
-          "cnt": 4
+          "itemId": 47,
+          "cnt": 1148
+        },
+        {
+          "itemId": 77,
+          "cnt": 1104
         }
       ]
     },
@@ -1354,24 +1568,28 @@
       "championId": "TFT6_Fiora",
       "itemInfos": [
         {
-          "itemId": 15,
-          "cnt": 14
+          "itemId": 0,
+          "cnt": 21907
         },
         {
-          "itemId": 19,
-          "cnt": 10
+          "itemId": 15,
+          "cnt": 2084
+        },
+        {
+          "itemId": 39,
+          "cnt": 1756
         },
         {
           "itemId": 49,
-          "cnt": 9
+          "cnt": 1513
         },
         {
-          "itemId": 48,
-          "cnt": 8
+          "itemId": 19,
+          "cnt": 1363
         },
         {
-          "itemId": 25,
-          "cnt": 8
+          "itemId": 12,
+          "cnt": 1343
         }
       ]
     },
@@ -1379,24 +1597,28 @@
       "championId": "TFT6_Janna",
       "itemInfos": [
         {
-          "itemId": 79,
-          "cnt": 11
+          "itemId": 0,
+          "cnt": 16598
         },
         {
-          "itemId": 9,
-          "cnt": 7
+          "itemId": 79,
+          "cnt": 1515
+        },
+        {
+          "itemId": 46,
+          "cnt": 905
+        },
+        {
+          "itemId": 4,
+          "cnt": 888
         },
         {
           "itemId": 67,
-          "cnt": 6
+          "cnt": 853
         },
         {
-          "itemId": 2,
-          "cnt": 6
-        },
-        {
-          "itemId": 14,
-          "cnt": 5
+          "itemId": 6,
+          "cnt": 775
         }
       ]
     },
@@ -1404,24 +1626,28 @@
       "championId": "TFT6_Urgot",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 43655
+        },
+        {
           "itemId": 15,
-          "cnt": 63
+          "cnt": 9493
         },
         {
           "itemId": 26,
-          "cnt": 58
+          "cnt": 9442
         },
         {
           "itemId": 24,
-          "cnt": 54
+          "cnt": 8234
         },
         {
           "itemId": 29,
-          "cnt": 30
+          "cnt": 5296
         },
         {
-          "itemId": 12,
-          "cnt": 13
+          "itemId": 19,
+          "cnt": 2669
         }
       ]
     },
@@ -1429,24 +1655,28 @@
       "championId": "TFT6_Braum",
       "itemInfos": [
         {
-          "itemId": 56,
-          "cnt": 21
+          "itemId": 0,
+          "cnt": 38454
         },
         {
-          "itemId": 47,
-          "cnt": 16
+          "itemId": 56,
+          "cnt": 3442
         },
         {
           "itemId": 55,
-          "cnt": 14
+          "cnt": 3389
+        },
+        {
+          "itemId": 66,
+          "cnt": 3192
         },
         {
           "itemId": 77,
-          "cnt": 13
+          "cnt": 3023
         },
         {
           "itemId": 37,
-          "cnt": 13
+          "cnt": 2593
         }
       ]
     },
@@ -1454,24 +1684,28 @@
       "championId": "TFT6_Yuumi",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 19946
+        },
+        {
           "itemId": 37,
-          "cnt": 22
+          "cnt": 4720
         },
         {
           "itemId": 79,
-          "cnt": 11
-        },
-        {
-          "itemId": 46,
-          "cnt": 8
+          "cnt": 1254
         },
         {
           "itemId": 77,
-          "cnt": 7
+          "cnt": 1060
         },
         {
-          "itemId": 67,
-          "cnt": 7
+          "itemId": 47,
+          "cnt": 980
+        },
+        {
+          "itemId": 46,
+          "cnt": 874
         }
       ]
     },
@@ -1479,24 +1713,28 @@
       "championId": "TFT6_Viktor",
       "itemInfos": [
         {
-          "itemId": 34,
-          "cnt": 16
+          "itemId": 0,
+          "cnt": 18705
         },
         {
           "itemId": 14,
-          "cnt": 16
+          "cnt": 2498
         },
         {
-          "itemId": 39,
-          "cnt": 12
+          "itemId": 34,
+          "cnt": 2422
         },
         {
           "itemId": 15,
-          "cnt": 9
+          "cnt": 2013
         },
         {
-          "itemId": 33,
-          "cnt": 6
+          "itemId": 39,
+          "cnt": 1676
+        },
+        {
+          "itemId": 24,
+          "cnt": 917
         }
       ]
     },
@@ -1504,24 +1742,28 @@
       "championId": "TFT6_TahmKench",
       "itemInfos": [
         {
+          "itemId": 0,
+          "cnt": 32466
+        },
+        {
           "itemId": 15,
-          "cnt": 32
+          "cnt": 3516
         },
         {
           "itemId": 34,
-          "cnt": 24
+          "cnt": 3032
         },
         {
           "itemId": 13,
-          "cnt": 20
+          "cnt": 2377
         },
         {
           "itemId": 44,
-          "cnt": 17
+          "cnt": 2128
         },
         {
-          "itemId": 39,
-          "cnt": 13
+          "itemId": 78,
+          "cnt": 1681
         }
       ]
     },
@@ -1529,24 +1771,28 @@
       "championId": "TFT6_Jayce",
       "itemInfos": [
         {
-          "itemId": 12,
-          "cnt": 10
+          "itemId": 0,
+          "cnt": 25788
+        },
+        {
+          "itemId": 55,
+          "cnt": 1404
         },
         {
           "itemId": 77,
-          "cnt": 9
-        },
-        {
-          "itemId": 28,
-          "cnt": 9
+          "cnt": 1399
         },
         {
           "itemId": 66,
-          "cnt": 8
+          "cnt": 1326
         },
         {
           "itemId": 56,
-          "cnt": 7
+          "cnt": 1154
+        },
+        {
+          "itemId": 25,
+          "cnt": 1116
         }
       ]
     },
@@ -1554,24 +1800,28 @@
       "championId": "TFT6_Galio",
       "itemInfos": [
         {
-          "itemId": 77,
-          "cnt": 21
+          "itemId": 0,
+          "cnt": 31659
+        },
+        {
+          "itemId": 66,
+          "cnt": 2149
         },
         {
           "itemId": 19,
-          "cnt": 17
+          "cnt": 1972
         },
         {
-          "itemId": 37,
-          "cnt": 16
-        },
-        {
-          "itemId": 56,
-          "cnt": 13
+          "itemId": 77,
+          "cnt": 1962
         },
         {
           "itemId": 55,
-          "cnt": 12
+          "cnt": 1880
+        },
+        {
+          "itemId": 25,
+          "cnt": 1742
         }
       ]
     },
@@ -1579,24 +1829,28 @@
       "championId": "TFT6_Jinx",
       "itemInfos": [
         {
-          "itemId": 15,
-          "cnt": 21
+          "itemId": 0,
+          "cnt": 29976
         },
         {
-          "itemId": 12,
-          "cnt": 15
+          "itemId": 15,
+          "cnt": 3878
         },
         {
           "itemId": 78,
-          "cnt": 12
+          "cnt": 2890
         },
         {
-          "itemId": 26,
-          "cnt": 12
+          "itemId": 23,
+          "cnt": 2645
+        },
+        {
+          "itemId": 12,
+          "cnt": 1973
         },
         {
           "itemId": 49,
-          "cnt": 11
+          "cnt": 1898
         }
       ]
     },
@@ -1604,24 +1858,28 @@
       "championId": "TFT6_Kaisa",
       "itemInfos": [
         {
-          "itemId": 37,
-          "cnt": 48
+          "itemId": 0,
+          "cnt": 52903
         },
         {
           "itemId": 15,
-          "cnt": 47
+          "cnt": 8967
+        },
+        {
+          "itemId": 37,
+          "cnt": 7723
         },
         {
           "itemId": 34,
-          "cnt": 36
+          "cnt": 7175
         },
         {
           "itemId": 23,
-          "cnt": 24
+          "cnt": 3642
         },
         {
-          "itemId": 12,
-          "cnt": 17
+          "itemId": 39,
+          "cnt": 3053
         }
       ]
     },
@@ -1629,24 +1887,28 @@
       "championId": "TFT6_Akali",
       "itemInfos": [
         {
-          "itemId": 34,
-          "cnt": 22
+          "itemId": 0,
+          "cnt": 19726
         },
         {
           "itemId": 15,
-          "cnt": 21
+          "cnt": 4539
+        },
+        {
+          "itemId": 34,
+          "cnt": 4453
         },
         {
           "itemId": 19,
-          "cnt": 14
+          "cnt": 2887
         },
         {
-          "itemId": 36,
-          "cnt": 5
+          "itemId": 44,
+          "cnt": 1117
         },
         {
-          "itemId": 13,
-          "cnt": 5
+          "itemId": 12,
+          "cnt": 941
         }
       ]
     },
@@ -1654,24 +1916,28 @@
       "championId": "TFT6_Veigar",
       "itemInfos": [
         {
-          "itemId": 46,
-          "cnt": 1
+          "itemId": 0,
+          "cnt": 444
+        },
+        {
+          "itemId": 39,
+          "cnt": 55
         },
         {
           "itemId": 13,
-          "cnt": 1
+          "cnt": 44
         },
         {
-          "itemId": 2200,
-          "cnt": 0
+          "itemId": 44,
+          "cnt": 40
         },
         {
-          "itemId": 2199,
-          "cnt": 0
+          "itemId": 34,
+          "cnt": 40
         },
         {
-          "itemId": 2198,
-          "cnt": 0
+          "itemId": 33,
+          "cnt": 28
         }
       ]
     }
