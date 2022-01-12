@@ -3,7 +3,6 @@ package org.doubleus.tft_helper_kotlin_spring.dto.deck
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.doubleus.tft_helper_kotlin_spring.constants.ConstantDeck
 
 @Serializable
 data class DeckStatisticResultDto(
@@ -21,8 +20,6 @@ data class DeckStatisticResultDto(
         var rank_sum: Int,
     )
 
-    constructor(constantDeck: ConstantDeck): this(constantDeck.id)
-
     fun accumulateData(rank: Int, isCompleted: Boolean) {
         total.game_cnt += 1
         total.rank_sum += rank
@@ -36,8 +33,5 @@ data class DeckStatisticResultDto(
         }
     }
 
-    override fun toString(): String {
-
-        return Json.encodeToString(this)
-    }
+    override fun toString(): String = Json.encodeToString(this)
 }

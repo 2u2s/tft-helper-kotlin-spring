@@ -80,7 +80,7 @@ class RiotService(
 
     fun getStatistics(start: Int=0, end: Int=0): RiotStatisticResultDto {
         val deckStatisticInfoMap: Map<String, DeckStatisticResultDto> =
-            TftConstants.decks.associate{ deck -> deck.id to DeckStatisticResultDto(deck) }
+            TftConstants.decks.associate{ deck -> deck.id to DeckStatisticResultDto(deck.id) }
         val recommendedItemInfoMap: MutableMap<String, MutableMap<Int, Int>> =
             TftConstants.champions.associate { champion -> champion.id to TftConstants.items.associateWith { 0 }.toMutableMap() }.toMutableMap()
 
@@ -106,7 +106,7 @@ class RiotService(
         recommendedItemInfoMap.keys.forEach { championId ->
             val recommended = recommendedItemInfoMap[championId]
             var sorted = recommended!!.toList().sortedBy { (_, v) -> v }.reversed()
-            val total: Int = sorted.fold(0, {acc, pair -> acc + pair.second})
+            val total: Int = sorted.fold(0) { acc, pair -> acc + pair.second }
             if (sorted.size > 5)
                 sorted = sorted.subList(0, 5)
 
