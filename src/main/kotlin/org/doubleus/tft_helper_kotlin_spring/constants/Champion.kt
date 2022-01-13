@@ -10,9 +10,5 @@ data class Champion(
 
     fun with(items: List<Int>) = Champion(id, traits, cost, items)
 
-    fun with(item: Int) = with(listOf(item))
-
-    fun with(item1: Int, item2: Int) = with(listOf(item1, item2))
-
-    fun with(item1: Int, item2: Int, item3: Int) = with(listOf(item1, item2, item3))
+    fun with(vararg items: Int) = with(items.toList())
 }
