@@ -1,6 +1,7 @@
 package org.doubleus.tft_helper_kotlin_spring.service
 
 import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants
 import org.doubleus.tft_helper_kotlin_spring.dto.deck.DeckStatisticResultDto
@@ -38,6 +39,8 @@ class RiotService(
      */
     @Value("\${file.match-ids}")
     private val matchIdFileName: String,
+    @Value("\${file.deck-statistics-result}")
+    private val deckStatisticsResultFileName: String,
 ) {
 
     val handler = RiotApiHandler(tempAppKey)
@@ -114,16 +117,19 @@ class RiotService(
             extracted.addAll(sorted)
             recommendedItemInfoMap[championId] = extracted.associate { it.first to it.second }.toMutableMap()
         }
+        val output =
+            RiotStatisticResultDto(
+                deckStatisticInfoMap.values.stream().toList(),
+                recommendedItemInfoMap.map { (championId, itemInfoMap) ->
+                    ChampionRecommendedItemDto(championId, itemInfoMap.map { RecommendedItemInfos(it.key, it.value) })
+                }
+            )
+        saveFile(File("${filePath}/${deckStatisticsResultFileName}"), Json.encodeToString(output))
 
-        return RiotStatisticResultDto(
-            deckStatisticInfoMap.values.stream().toList(),
-            recommendedItemInfoMap.map { (championId, itemInfoMap) ->
-                ChampionRecommendedItemDto(championId, itemInfoMap.map { RecommendedItemInfos(it.key, it.value) })
-            }
-        )
+        return output
     }
 
-    fun getDeckStatistics(matchInfo: MatchDto, deckStatisticInfoMap: Map<String, DeckStatisticResultDto>) {
+    private fun getDeckStatistics(matchInfo: MatchDto, deckStatisticInfoMap: Map<String, DeckStatisticResultDto>) {
         val deckDefiningCriteria = 0.7
         val completionCriteria = 0.94
 
@@ -148,7 +154,7 @@ class RiotService(
         }
     }
 
-    fun getItemStatistics(matchInfo: MatchDto, recommendedItemInfoMap: Map<String, MutableMap<Int, Int>>) {
+    private fun getItemStatistics(matchInfo: MatchDto, recommendedItemInfoMap: Map<String, MutableMap<Int, Int>>) {
         val participants = matchInfo.info.participants
         participants.forEach { participant ->
             val champions = participant.units
@@ -161,7 +167,13 @@ class RiotService(
 
     private fun saveFile(file: File, lineList: Iterable<String>) {
         val writer = FileWriter(file)
-        lineList.forEach{ line -> writer.write("${line}\n")}
+        lineList.forEach{ line -> writer.write("${line}\n") }
+        writer.close()
+    }
+
+    private fun saveFile(file: File, line: String) {
+        val writer = FileWriter(file)
+        writer.write("${line}\n")
         writer.close()
     }
 
