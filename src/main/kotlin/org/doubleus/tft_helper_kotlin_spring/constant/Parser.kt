@@ -1,4 +1,4 @@
-package org.doubleus.tft_helper_kotlin_spring.constants
+package org.doubleus.tft_helper_kotlin_spring.constant
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File

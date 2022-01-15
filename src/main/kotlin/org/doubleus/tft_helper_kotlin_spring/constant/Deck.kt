@@ -1,7 +1,7 @@
-package org.doubleus.tft_helper_kotlin_spring.constants
+package org.doubleus.tft_helper_kotlin_spring.constant
 
-import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants.Companion.championIndexMap
-import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants.Companion.champions
+import org.doubleus.tft_helper_kotlin_spring.constant.TftConstants.Companion.championIndexMap
+import org.doubleus.tft_helper_kotlin_spring.constant.TftConstants.Companion.champions
 import kotlin.math.sqrt
 
 typealias TraitInfo = Pair<String, Int>
@@ -27,9 +27,9 @@ data class ConstantDeck(
     fun getSimilarity(userDeck: UserDeck): Double {
         val myVector = getChampionVector()
         val userVector = userDeck.getChampionVector()
-        val innerProduct: Double = myVector.foldIndexed(0.0, { i, acc, _ -> acc + (myVector[i] * userVector[i]) })
-        val myVectorLength = sqrt(myVector.fold(0.0, {acc, v -> acc + v}))
-        val userVectorLength = sqrt(userVector.fold(0.0, {acc, v -> acc + v}))
+        val innerProduct: Double = myVector.foldIndexed(0.0) { i, acc, _ -> acc + (myVector[i] * userVector[i]) }
+        val myVectorLength = sqrt(myVector.fold(0.0) { acc, v -> acc + v })
+        val userVectorLength = sqrt(userVector.fold(0.0) { acc, v -> acc + v })
 
         return sqrt(innerProduct / (myVectorLength * userVectorLength))
     }

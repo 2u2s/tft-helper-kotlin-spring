@@ -3,7 +3,7 @@ package org.doubleus.tft_helper_kotlin_spring.service
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants
+import org.doubleus.tft_helper_kotlin_spring.constant.TftConstants
 import org.doubleus.tft_helper_kotlin_spring.dto.deck.DeckStatisticResultDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.ChampionRecommendedItemDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.RecommendedItemInfos

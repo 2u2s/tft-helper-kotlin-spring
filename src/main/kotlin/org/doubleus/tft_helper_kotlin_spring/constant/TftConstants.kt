@@ -1,4 +1,4 @@
-package org.doubleus.tft_helper_kotlin_spring.constants
+package org.doubleus.tft_helper_kotlin_spring.constant
 
 class TftConstants {
     companion object {

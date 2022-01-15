@@ -1,8 +1,8 @@
 package org.doubleus.tft_helper_kotlin_spring.dto.riot.match
 
 import kotlinx.serialization.Serializable
-import org.doubleus.tft_helper_kotlin_spring.constants.*
-import org.doubleus.tft_helper_kotlin_spring.constants.TftConstants.Companion.championMap
+import org.doubleus.tft_helper_kotlin_spring.constant.*
+import org.doubleus.tft_helper_kotlin_spring.constant.TftConstants.Companion.championMap
 
 @Serializable
 data class ParticipantDto(
