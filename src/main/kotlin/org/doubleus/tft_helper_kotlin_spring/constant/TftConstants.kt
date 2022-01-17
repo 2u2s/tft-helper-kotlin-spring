@@ -2,8 +2,110 @@ package org.doubleus.tft_helper_kotlin_spring.constant
 
 class TftConstants {
     companion object {
+        //ITEMS
+        private const val bfSword           =    1
+        private const val recurveBow        =    2
+        private const val largeRod          =    3
+        private const val tearOfTheGoddess  =    4
+        private const val chainVest         =    5
+        private const val negatronCloak     =    6
+        private const val giantsBelt        =    7
+        private const val spatula           =    8
+        private const val sparringGloves    =    9
+        private const val deathblade        =   11
+        private const val giantSlayer       =   12
+        private const val hextechGunblade   =   13
+        private const val shojin            =   14
+        private const val guardianAngel     =   15
+        private const val bloodthirster     =   16
+        private const val zekesHerald       =   17
+        private const val imperialEmblem    =   18
+        private const val infinityEdge      =   19
+        private const val rapidFirecannon   =   22
+        private const val guinsoo           =   23
+        private const val statikkShiv       =   24
+        private const val titansResolve     =   25
+        private const val runaan            =   26
+        private const val zzRotPortal       =   27
+        private const val challengerEmblem  =   28
+        private const val lastWhisper       =   29
+        private const val rabadon           =   33
+        private const val archangelsStaff   =   34
+        private const val solari            =   35
+        private const val ionicSpark        =   36
+        private const val morellonomicon    =   37
+        private const val arcanistEmblem    =   38
+        private const val jeweledGauntlet   =   39
+        private const val blueBuff          =   44
+        private const val frozenHeart       =   45
+        private const val chaliceOfPower    =   46
+        private const val redemption        =   47
+        private const val academyEmblem     =   48
+        private const val handOfJustice     =   49
+        private const val brambleVest       =   55
+        private const val gargoyle          =   56
+        private const val sunfireCape       =   57
+        private const val bodyguardEmblem   =   58
+        private const val shroudOfStillness =   59
+        private const val dragonsClaw       =   66
+        private const val zephyr            =   67
+        private const val syndicateEmblem   =   68
+        private const val quicksilver       =   69
+        private const val warmog            =   77
+        private const val chemtechEmblem    =   78
+        private const val bansheesClaw      =   79
+        private const val tacticiansCrown   =   88
+        private const val assassinEmblem    =   89
+        private const val thiefsGloves      =   99
+        private const val mutantEmblem      = 2190
+        private const val clockworkEmblem   = 2191
+        private const val mercenaryEmblem   = 2192
+        private const val socialiteEmblem   = 2193
+        private const val enforcerEmblem    = 2194
+        private const val scrapEmblem       = 2195
+        private const val protectorEmblem   = 2196
+        private const val bruiserEmblem     = 2197
+        private const val innovatorEmblem   = 2198
+        private const val sniperEmblem      = 2199
+        private const val scholarEmblem     = 2200
+
+        val items: List<Int> = listOf(
+            bfSword,            recurveBow,         largeRod,           tearOfTheGoddess,
+            chainVest,          negatronCloak,      giantsBelt,         spatula,
+            sparringGloves,
+
+            deathblade,         giantSlayer,        hextechGunblade,    shojin,
+            guardianAngel,      bloodthirster,      zekesHerald,        imperialEmblem,
+            infinityEdge,
+
+            rapidFirecannon,    guinsoo,            statikkShiv,        titansResolve,
+            runaan,             zzRotPortal,        challengerEmblem,   lastWhisper,
+
+            rabadon,            archangelsStaff,    solari,             ionicSpark,
+            morellonomicon,     arcanistEmblem,     jeweledGauntlet,
+
+            blueBuff,           frozenHeart,        chaliceOfPower,     redemption,
+            academyEmblem,      handOfJustice,
+
+            brambleVest,        gargoyle,           sunfireCape,        bodyguardEmblem,
+            shroudOfStillness,
+
+            dragonsClaw,        zephyr,             syndicateEmblem,    quicksilver,
+
+            warmog,             chemtechEmblem,     bansheesClaw,
+
+            tacticiansCrown,    assassinEmblem,
+
+            thiefsGloves,
+
+            mutantEmblem,       clockworkEmblem,    mercenaryEmblem,    socialiteEmblem,
+            enforcerEmblem,     scrapEmblem,        protectorEmblem,    bruiserEmblem,
+            innovatorEmblem,    sniperEmblem,       scholarEmblem,
+        )
+
+
         // TRAITS
-        val academy = Trait(
+        private val academy = Trait(
             "Set6_Academy",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -12,7 +114,7 @@ class TftConstants {
                 TraitStyle(style=4, min=8, max=25000)
             )
         )
-        val arcanist = Trait(
+        private val arcanist = Trait(
             "Set6_Arcanist",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -21,7 +123,7 @@ class TftConstants {
                 TraitStyle(style=4, min=8, max=25000)
             )
         )
-        val assassin = Trait(
+        private val assassin = Trait(
             "Set6_Assassin",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -29,7 +131,7 @@ class TftConstants {
                 TraitStyle(style=3, min=6, max=25000)
             )
         )
-        val bodyguard = Trait(
+        private val bodyguard = Trait(
             "Set6_Bodyguard",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -38,7 +140,7 @@ class TftConstants {
                 TraitStyle(style=4, min=8, max=9999)
             )
         )
-        val bruiser = Trait(
+        private val bruiser = Trait(
             "Set6_Bruiser",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -47,7 +149,7 @@ class TftConstants {
                 TraitStyle(style=4, min=8, max=25000)
             )
         )
-        val challenger = Trait(
+        private val challenger = Trait(
             "Set6_Challenger",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -56,7 +158,7 @@ class TftConstants {
                 TraitStyle(style=4, min=8, max=9999)
             )
         )
-        val chemtech = Trait(
+        private val chemtech = Trait(
             "Set6_Chemtech",
             listOf(
                 TraitStyle(style=1, min=3, max=4),
@@ -65,7 +167,7 @@ class TftConstants {
                 TraitStyle(style=4, min=9, max=25000)
             )
         )
-        val clockwork = Trait(
+        private val clockwork = Trait(
             "Set6_Clockwork",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -73,19 +175,19 @@ class TftConstants {
                 TraitStyle(style=4, min=6, max=25000)
             )
         )
-        val colossus = Trait(
+        private val colossus = Trait(
             "Set6_Colossus",
             listOf(
                 TraitStyle(style=3, min=2, max=25000)
             )
         )
-        val cuddly = Trait(
+        private val cuddly = Trait(
             "Set6_Cuddly",
             listOf(
                 TraitStyle(style=3, min=1, max=25000)
             )
         )
-        val enchanter = Trait(
+        private val enchanter = Trait(
             "Set6_Enchanter",
             listOf(
                 TraitStyle(style=1, min=2, max=2),
@@ -94,27 +196,27 @@ class TftConstants {
                 TraitStyle(style=4, min=5, max=9999)
             )
         )
-        val enforcer = Trait(
+        private val enforcer = Trait(
             "Set6_Enforcer",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
                 TraitStyle(style=3, min=4, max=25000)
             )
         )
-        val glutton = Trait(
+        private val glutton = Trait(
             "Set6_Glutton",
             listOf(
                 TraitStyle(style=3, min=1, max=25000)
             )
         )
-        val imperial = Trait(
+        private val imperial = Trait(
             "Set6_Imperial",
             listOf(
                 TraitStyle(style=3, min=3, max=4),
                 TraitStyle(style=4, min=5, max=25000)
             )
         )
-        val innovator = Trait(
+        private val innovator = Trait(
             "Set6_Innovator",
             listOf(
                 TraitStyle(style=1, min=3, max=4),
@@ -122,7 +224,7 @@ class TftConstants {
                 TraitStyle(style=4, min=7, max=25000)
             )
         )
-        val mercenary = Trait(
+        private val mercenary = Trait(
             "Set6_Mercenary",
             listOf(
                 TraitStyle(style=1, min=3, max=4),
@@ -130,14 +232,14 @@ class TftConstants {
                 TraitStyle(style=4, min=7, max=25000)
             )
         )
-        val mutant = Trait(
+        private val mutant = Trait(
             "Set6_Mutant",
             listOf(
                 TraitStyle(style=1, min=3, max=4),
                 TraitStyle(style=3, min=5, max=25000)
             )
         )
-        val protector = Trait(
+        private val protector = Trait(
             "Set6_Protector",
             listOf(
                 TraitStyle(style=1, min=2, max=2),
@@ -146,7 +248,7 @@ class TftConstants {
                 TraitStyle(style=4, min=5, max=25000)
             )
         )
-        val scholar = Trait(
+        private val scholar = Trait(
             "Set6_Scholar",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -154,7 +256,7 @@ class TftConstants {
                 TraitStyle(style=4, min=6, max=25000)
             )
         )
-        val scrap = Trait(
+        private val scrap = Trait(
             "Set6_Scrap",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -162,13 +264,13 @@ class TftConstants {
                 TraitStyle(style=3, min=6, max=25000)
             )
         )
-        val sister = Trait(
+        private val sister = Trait(
             "Set6_Sister",
             listOf(
                 TraitStyle(style=3, min=2, max=25000)
             )
         )
-        val sniper = Trait(
+        private val sniper = Trait(
             "Set6_Sniper",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -176,7 +278,7 @@ class TftConstants {
                 TraitStyle(style=4, min=6, max=25000)
             )
         )
-        val socialite = Trait(
+        private val socialite = Trait(
             "Set6_Socialite",
             listOf(
                 TraitStyle(style=1, min=1, max=1),
@@ -184,7 +286,7 @@ class TftConstants {
                 TraitStyle(style=3, min=3, max=25000)
             )
         )
-        val syndicate = Trait(
+        private val syndicate = Trait(
             "Set6_Syndicate",
             listOf(
                 TraitStyle(style=1, min=3, max=4),
@@ -192,13 +294,13 @@ class TftConstants {
                 TraitStyle(style=4, min=7, max=25000)
             )
         )
-        val transformer = Trait(
+        private val transformer = Trait(
             "Set6_Transformer",
             listOf(
                 TraitStyle(style=3, min=1, max=25000)
             )
         )
-        val twinshot = Trait(
+        private val twinshot = Trait(
             "Set6_Twinshot",
             listOf(
                 TraitStyle(style=1, min=2, max=3),
@@ -206,18 +308,50 @@ class TftConstants {
                 TraitStyle(style=4, min=6, max=25000)
             )
         )
-        val yordle = Trait(
+        private val yordle = Trait(
             "Set6_Yordle",
             listOf(
                 TraitStyle(style=1, min=3, max=5),
                 TraitStyle(style=3, min=6, max=25000)
             )
         )
-        val yordleLord = Trait(
+        private val yordleLord = Trait(
             "Set6_YordleLord",
             listOf(
                 TraitStyle(style=4, min=1, max=25000)
             )
+        )
+
+        val traits: List<Trait> = listOf(
+            academy,        arcanist,       assassin,       bodyguard,
+            bruiser,        challenger,     chemtech,       clockwork,
+            colossus,       cuddly,         enchanter,      enforcer,
+            glutton,        imperial,       innovator,      mercenary,
+            mutant,         protector,      scholar,        scrap,
+            sister,         sniper,         socialite,      syndicate,
+            transformer,    twinshot,       yordle,         yordleLord
+        )
+        val traitMap: Map<String, Trait> = traits.associateBy { trait -> trait.id }
+        val traitItemMap: Map<Int, String> = mapOf(
+            imperialEmblem to imperial.id,
+            challengerEmblem to challenger.id,
+            arcanistEmblem to arcanist.id,
+            academyEmblem to academy.id,
+            bodyguardEmblem to bodyguard.id,
+            syndicateEmblem to syndicate.id,
+            chemtechEmblem to chemtech.id,
+            assassinEmblem to assassin.id,
+            mutantEmblem to mutant.id,
+            clockworkEmblem to clockwork.id,
+            mercenaryEmblem to mercenary.id,
+            socialiteEmblem to socialite.id,
+            enforcerEmblem to enforcer.id,
+            scrapEmblem to scrap.id,
+            protectorEmblem to protector.id,
+            bruiserEmblem to bruiser.id,
+            innovatorEmblem to innovator.id,
+            sniperEmblem to sniper.id,
+            scholarEmblem to scholar.id,
         )
 
         //CHAMPIONS
@@ -285,415 +419,6 @@ class TftConstants {
         val akali =         Champion("TFT6_Akali",          listOf(syndicate, assassin),            5)
         val veigar =        Champion("TFT6_Veigar",         listOf(yordleLord),                     5)
 
-
-        //ITEMS
-        const val bfSword           =    1
-        const val recurveBow        =    2
-        const val largeRod          =    3
-        const val tearOfTheGoddess  =    4
-        const val chainVest         =    5
-        const val negatronCloak     =    6
-        const val giantsBelt        =    7
-        const val spatula           =    8
-        const val sparringGloves    =    9
-        const val deathblade        =   11
-        const val giantSlayer       =   12
-        const val hextechGunblade   =   13
-        const val shojin            =   14
-        const val guardianAngel     =   15
-        const val bloodthirster     =   16
-        const val zekesHerald       =   17
-        const val imperialEmblem    =   18
-        const val infinityEdge      =   19
-        const val rapidFirecannon   =   22
-        const val guinsoo           =   23
-        const val statikkShiv       =   24
-        const val titansResolve     =   25
-        const val runaan            =   26
-        const val zzRotPortal       =   27
-        const val challengerEmblem  =   28
-        const val lastWhisper       =   29
-        const val rabadon           =   33
-        const val archangelsStaff   =   34
-        const val solari            =   35
-        const val ionicSpark        =   36
-        const val morellonomicon    =   37
-        const val arcanistEmblem    =   38
-        const val jeweledGauntlet   =   39
-        const val blueBuff          =   44
-        const val frozenHeart       =   45
-        const val chaliceOfPower    =   46
-        const val redemption        =   47
-        const val academyEmblem     =   48
-        const val handOfJustice     =   49
-        const val brambleVest       =   55
-        const val gargoyle          =   56
-        const val sunfireCape       =   57
-        const val bodyguardEmblem   =   58
-        const val shroudOfStillness =   59
-        const val dragonsClaw       =   66
-        const val zephyr            =   67
-        const val syndicateEmblem   =   68
-        const val quicksilver       =   69
-        const val warmog            =   77
-        const val chemtechEmblem    =   78
-        const val bansheesClaw      =   79
-        const val tacticiansCrown   =   88
-        const val assassinEmblem    =   89
-        const val thiefsGloves      =   99
-        const val mutantEmblem      = 2190
-        const val clockworkEmblem   = 2191
-        const val mercenaryEmblem   = 2192
-        const val socialiteEmblem   = 2193
-        const val enforcerEmblem    = 2194
-        const val scrapEmblem       = 2195
-        const val protectorEmblem   = 2196
-        const val bruiserEmblem     = 2197
-        const val innovatorEmblem   = 2198
-        const val sniperEmblem      = 2199
-        const val scholarEmblem     = 2200
-
-        val fiveChemtech = ConstantDeck(
-            "fiveChemtech",
-            listOf(
-                vi,
-                lissandra.with(guardianAngel, archangelsStaff, morellonomicon),
-                zac,
-                mundo.with(brambleVest, dragonsClaw),
-                urgot.with(guardianAngel, infinityEdge, lastWhisper),
-                jinx.with(guinsoo),
-                tahmKench,
-                viktor.with(shojin),
-            ),
-            listOf(
-                lissandra,  mundo,      urgot,      jinx,
-            ),
-            listOf(
-                Pair(chemtech.id,   2),
-                Pair(twinshot.id,   1),
-            ),
-        )
-        val highValueJinx = ConstantDeck(
-            "highValueJinx",
-            listOf(
-                vi,
-                janna,
-                jhin,
-                orianna,
-                jayce.with(brambleVest, titansResolve),
-                jinx.with(guardianAngel, guinsoo, handOfJustice),
-                tahmKench,
-                yuumi.with(morellonomicon),
-            ),
-            listOf(
-                vi,         jinx,       jayce,      yuumi,
-            ),
-            listOf(
-                Pair(sister.id,     1),
-                Pair(transformer.id,1),
-                Pair(cuddly.id,     1),
-                Pair(enchanter.id,  1),
-            ),
-        )
-        val bodyguardJhin = ConstantDeck(
-            "bodyguardJhin",
-            listOf(
-                leona,
-                missFortune,
-                taric,
-                braum.with(brambleVest, gargoyle, dragonsClaw),
-                janna,
-                jhin.with(infinityEdge, giantSlayer, lastWhisper),
-                orianna.with(shojin),
-                yuumi.with(morellonomicon),
-            ),
-            listOf(
-                braum,      jhin,       orianna,    yuumi,
-            ),
-            listOf(
-                Pair(cuddly.id,     1),
-                Pair(enchanter.id,  2),
-                Pair(bodyguard.id,  1),
-                Pair(clockwork.id,  1),
-            ),
-        )
-        val sevenInnovator = ConstantDeck(
-            "sevenInnovator",
-            listOf(
-                ezreal,
-                singed,
-                zilean,
-                heimerdinger.with(jeweledGauntlet, blueBuff),
-                janna,
-                orianna,
-                seraphine.with(shojin, morellonomicon),
-                jayce.with(bloodthirster, infinityEdge, giantSlayer),
-            ),
-            listOf(
-                seraphine,  jayce,
-            ),
-            listOf(
-                Pair(innovator.id,  3),
-            ),
-        )
-        val challengerYone = ConstantDeck(
-            "challengerYone",
-            listOf(
-                quinn,
-                warwick,
-                leona,
-                samira,
-                braum.with(brambleVest, dragonsClaw),
-                fiora.with(titansResolve, handOfJustice),
-                yone.with(guardianAngel, runaan, lastWhisper),
-                kaisa.with(shojin, jeweledGauntlet),
-            ),
-            listOf(
-                yone,       fiora
-            ),
-            listOf(
-                Pair(challenger.id, 3),
-            ),
-        )
-        val scholarLissandra = ConstantDeck(
-            "scholarLissandra",
-            listOf(
-                heimerdinger,
-                lissandra.with(guardianAngel, archangelsStaff, morellonomicon),
-                taric.with(brambleVest, warmog),
-                janna,
-                orianna.with(shojin),
-                seraphine.with(shojin),
-                jayce.with(titansResolve, bloodthirster),
-                yuumi,
-            ),
-            listOf(
-                lissandra,   yuumi
-            ),
-            listOf(
-                Pair(scholar.id,    2),
-                Pair(transformer.id,1),
-            ),
-        )
-        val sixArcanist = ConstantDeck(
-            "sixArcanist",
-            listOf(
-                ziggs,
-                swain,
-                malzahar,
-                vex.with(brambleVest, dragonsClaw, ionicSpark),
-                janna,
-                lux.with(infinityEdge, jeweledGauntlet, blueBuff),
-                viktor.with(shojin, guinsoo),
-                yuumi,
-            ),
-            listOf(
-                vex,        lux,
-            ),
-            listOf(
-                Pair(arcanist.id,  3),
-            ),
-        )
-        val clapio = ConstantDeck(
-            "clapio",
-            listOf(
-                blitzcrank,
-                taric,
-                janna,
-                seraphine.with(shojin, archangelsStaff, morellonomicon),
-                sion.with(frozenHeart),
-                galio.with(infinityEdge, guinsoo, titansResolve),
-                yuumi,
-            ),
-            listOf(
-                sion,        galio,
-            ),
-            listOf(
-                Pair(colossus.id,  1),
-            ),
-        )
-        val socialiteAkali = ConstantDeck(
-            "socialiteAkali",
-            listOf(
-                shaco,
-                taric,
-                braum,
-                janna,
-                seraphine.with(morellonomicon),
-                akali.with(infinityEdge, archangelsStaff, ionicSpark),
-                galio.with(brambleVest, gargoyle),
-                yuumi,
-            ),
-            listOf(
-                akali,      braum,      galio
-            ),
-            listOf(
-                Pair(socialite.id,  3),
-                Pair(assassin.id,   1),
-            ),
-        )
-        val differentKaisa = ConstantDeck(
-            "differentKaisa",
-            listOf(
-                taric,
-                braum.with(warmog),
-                janna,
-                seraphine.with(morellonomicon),
-                galio.with(ionicSpark, brambleVest, dragonsClaw),
-                kaisa.with(hextechGunblade, shojin, jeweledGauntlet),
-                tahmKench,
-                yuumi,
-            ),
-            listOf(
-                galio,      kaisa,
-            ),
-            listOf(
-                Pair(socialite.id,  3),
-            ),
-        )
-        val rerollMutant = ConstantDeck(
-            "rerollMutant",
-            listOf(
-                kassadin,
-                choGath.with(redemption, brambleVest, dragonsClaw),
-                malzahar.with(hextechGunblade, jeweledGauntlet, blueBuff),
-                mundo.with(ionicSpark),
-                sion,
-                kaisa.with(shojin),
-            ),
-            listOf(
-                malzahar,      choGath,
-            ),
-            listOf(
-                Pair(mutant.id,     2),
-            ),
-        )
-        val rerollMissFortune = ConstantDeck(
-            "rerollMissFortune",
-            listOf(
-                leona,
-                missFortune.with(shojin, jeweledGauntlet, handOfJustice),
-                taric,
-                braum.with(brambleVest, dragonsClaw, warmog),
-                janna,
-                jhin.with(giantSlayer, infinityEdge),
-                orianna,
-                yuumi,
-            ),
-            listOf(
-                leona,      missFortune,braum,      jhin,
-            ),
-            listOf(
-                Pair(sniper.id,     1),
-                Pair(bodyguard.id,  1),
-            ),
-        )
-        val rerollGaKaGCaiKo = ConstantDeck(
-            "rerollGaKaGCaiKo",
-            listOf(
-                caitlyn,
-                garen.with(bloodthirster, brambleVest, warmog),
-                graves,
-                kassadin,
-                blitzcrank,
-                kogMaw.with(giantSlayer, guinsoo, handOfJustice),
-                vi,
-                mundo,
-            ),
-            listOf(
-                garen,      kogMaw,
-            ),
-            listOf(),
-        )
-        val rerollTrundle = ConstantDeck(
-            "rerollTrundle",
-            listOf(
-                ezreal,
-                blitzcrank,
-                trundle.with(bloodthirster, runaan, quicksilver),
-                vi,
-                ekko.with(morellonomicon),
-                braum,
-                janna,
-                jinx.with(guardianAngel, guinsoo),
-            ),
-            listOf(
-                trundle,    ekko,       jinx,
-            ),
-            listOf(
-                Pair(scrap.id,      2),
-                Pair(sister.id,     1),
-            ),
-        )
-        val rerollKatarina = ConstantDeck(
-            "rerollKatarina",
-            listOf(
-                katarina.with(infinityEdge, ionicSpark, handOfJustice),
-                ekko.with(morellonomicon, frozenHeart),
-                leona,
-                talon,
-                braum.with(gargoyle, warmog),
-                lux.with(blueBuff),
-                akali,
-                yuumi,
-            ),
-            listOf(
-                katarina,   ekko,       braum,
-            ),
-            listOf(
-                Pair(assassin.id,   2),
-                Pair(academy.id,    1),
-            ),
-        )
-        val rerollWarwick = ConstantDeck(
-            "rerollKatarina",
-            listOf(
-                singed,
-                quinn.with(shojin),
-                warwick.with(guinsoo, titansResolve, quicksilver),
-                lissandra.with(morellonomicon),
-                zac,
-                fiora.with(handOfJustice),
-                mundo.with(brambleVest, warmog),
-                kaisa
-            ),
-            listOf(
-                warwick,
-            ),
-            listOf(
-                Pair(chemtech.id,   1),
-                Pair(challenger.id, 1),
-            ),
-        )
-        val rerollYordle = ConstantDeck(
-            "rerollYordle",
-            listOf(
-                poppy,
-                ziggs,
-                lulu,
-                tristana,
-                heimerdinger.with(archangelsStaff, jeweledGauntlet, blueBuff),
-                vex.with(brambleVest, dragonsClaw, warmog),
-                janna,
-                veigar.with(rabadon, hextechGunblade)
-            ),
-            listOf(
-                janna, veigar
-            ),
-            listOf(
-                Pair(yordleLord.id, 1),
-            ),
-        )
-
-        val traits: List<Trait> = listOf(
-            academy,        arcanist,       assassin,       bodyguard,
-            bruiser,        challenger,     chemtech,       clockwork,
-            colossus,       cuddly,         enchanter,      enforcer,
-            glutton,        imperial,       innovator,      mercenary,
-            mutant,         protector,      scholar,        scrap,
-            sister,         sniper,         socialite,      syndicate,
-            transformer,    twinshot,       yordle,         yordleLord
-        )
         val champions: List<Champion> = listOf(
             graves,         singed,         twitch,         camille,
             illaoi,         twistedFate,    caitlyn,        darius,
@@ -718,39 +443,341 @@ class TftConstants {
             galio,          jinx,           kaisa,          akali,
             veigar,
         )
-        val items: List<Int> = listOf(
-            bfSword,            recurveBow,         largeRod,           tearOfTheGoddess,
-            chainVest,          negatronCloak,      giantsBelt,         spatula,
-            sparringGloves,
+        val championMap: Map<String, Champion> = champions.associateBy { champion -> champion.id }
+        val championIndexMap: Map<String, Int> = champions.associate { it.id to champions.indexOf(it) }
 
-            deathblade,         giantSlayer,        hextechGunblade,    shojin,
-            guardianAngel,      bloodthirster,      zekesHerald,        imperialEmblem,
-            infinityEdge,
-
-            rapidFirecannon,    guinsoo,            statikkShiv,        titansResolve,
-            runaan,             zzRotPortal,        challengerEmblem,   lastWhisper,
-
-            rabadon,            archangelsStaff,    solari,             ionicSpark,
-            morellonomicon,     arcanistEmblem,     jeweledGauntlet,
-
-            blueBuff,           frozenHeart,        chaliceOfPower,     redemption,
-            academyEmblem,      handOfJustice,
-
-            brambleVest,        gargoyle,           sunfireCape,        bodyguardEmblem,
-            shroudOfStillness,
-
-            dragonsClaw,        zephyr,             syndicateEmblem,    quicksilver,
-
-            warmog,             chemtechEmblem,     bansheesClaw,
-
-            tacticiansCrown,    assassinEmblem,
-
-            thiefsGloves,
-
-            mutantEmblem,       clockworkEmblem,    mercenaryEmblem,    socialiteEmblem,
-            enforcerEmblem,     scrapEmblem,        protectorEmblem,    bruiserEmblem,
-            innovatorEmblem,    sniperEmblem,       scholarEmblem,
+        private val fiveChemtech = ConstantDeck(
+            "fiveChemtech",
+            listOf(
+                vi,
+                lissandra.with(guardianAngel, archangelsStaff, morellonomicon),
+                zac,
+                mundo.with(brambleVest, dragonsClaw),
+                urgot.with(guardianAngel, infinityEdge, lastWhisper),
+                jinx.with(guinsoo),
+                tahmKench,
+                viktor.with(shojin),
+            ),
+            listOf(
+                lissandra,  mundo,      urgot,      jinx,
+            ),
+            listOf(
+                Pair(chemtech.id,   2),
+                Pair(twinshot.id,   1),
+            ),
         )
+        private val highValueJinx = ConstantDeck(
+            "highValueJinx",
+            listOf(
+                vi,
+                janna,
+                jhin,
+                orianna,
+                jayce.with(brambleVest, titansResolve),
+                jinx.with(guardianAngel, guinsoo, handOfJustice),
+                tahmKench,
+                yuumi.with(morellonomicon),
+            ),
+            listOf(
+                vi,         jinx,       jayce,      yuumi,
+            ),
+            listOf(
+                Pair(sister.id,     1),
+                Pair(transformer.id,1),
+                Pair(cuddly.id,     1),
+                Pair(enchanter.id,  1),
+            ),
+        )
+        private val bodyguardJhin = ConstantDeck(
+            "bodyguardJhin",
+            listOf(
+                leona,
+                missFortune,
+                taric,
+                braum.with(brambleVest, gargoyle, dragonsClaw),
+                janna,
+                jhin.with(infinityEdge, giantSlayer, lastWhisper),
+                orianna.with(shojin),
+                yuumi.with(morellonomicon),
+            ),
+            listOf(
+                braum,      jhin,       orianna,    yuumi,
+            ),
+            listOf(
+                Pair(cuddly.id,     1),
+                Pair(enchanter.id,  2),
+                Pair(bodyguard.id,  1),
+                Pair(clockwork.id,  1),
+            ),
+        )
+        private val sevenInnovator = ConstantDeck(
+            "sevenInnovator",
+            listOf(
+                ezreal,
+                singed,
+                zilean,
+                heimerdinger.with(jeweledGauntlet, blueBuff),
+                janna,
+                orianna,
+                seraphine.with(shojin, morellonomicon),
+                jayce.with(bloodthirster, infinityEdge, giantSlayer),
+            ),
+            listOf(
+                seraphine,  jayce,
+            ),
+            listOf(
+                Pair(innovator.id,  3),
+            ),
+        )
+        private val challengerYone = ConstantDeck(
+            "challengerYone",
+            listOf(
+                quinn,
+                warwick,
+                leona,
+                samira,
+                braum.with(brambleVest, dragonsClaw),
+                fiora.with(titansResolve, handOfJustice),
+                yone.with(guardianAngel, runaan, lastWhisper),
+                kaisa.with(shojin, jeweledGauntlet),
+            ),
+            listOf(
+                yone,       fiora
+            ),
+            listOf(
+                Pair(challenger.id, 3),
+            ),
+        )
+        private val scholarLissandra = ConstantDeck(
+            "scholarLissandra",
+            listOf(
+                heimerdinger,
+                lissandra.with(guardianAngel, archangelsStaff, morellonomicon),
+                taric.with(brambleVest, warmog),
+                janna,
+                orianna.with(shojin),
+                seraphine.with(shojin),
+                jayce.with(titansResolve, bloodthirster),
+                yuumi,
+            ),
+            listOf(
+                lissandra,   yuumi
+            ),
+            listOf(
+                Pair(scholar.id,    2),
+                Pair(transformer.id,1),
+            ),
+        )
+        private val sixArcanist = ConstantDeck(
+            "sixArcanist",
+            listOf(
+                ziggs,
+                swain,
+                malzahar,
+                vex.with(brambleVest, dragonsClaw, ionicSpark),
+                janna,
+                lux.with(infinityEdge, jeweledGauntlet, blueBuff),
+                viktor.with(shojin, guinsoo),
+                yuumi,
+            ),
+            listOf(
+                vex,        lux,
+            ),
+            listOf(
+                Pair(arcanist.id,  3),
+            ),
+        )
+        private val clapio = ConstantDeck(
+            "clapio",
+            listOf(
+                blitzcrank,
+                taric,
+                janna,
+                seraphine.with(shojin, archangelsStaff, morellonomicon),
+                sion.with(frozenHeart),
+                galio.with(infinityEdge, guinsoo, titansResolve),
+                yuumi,
+            ),
+            listOf(
+                sion,        galio,
+            ),
+            listOf(
+                Pair(colossus.id,  1),
+            ),
+        )
+        private val socialiteAkali = ConstantDeck(
+            "socialiteAkali",
+            listOf(
+                shaco,
+                taric,
+                braum,
+                janna,
+                seraphine.with(morellonomicon),
+                akali.with(infinityEdge, archangelsStaff, ionicSpark),
+                galio.with(brambleVest, gargoyle),
+                yuumi,
+            ),
+            listOf(
+                akali,      braum,      galio
+            ),
+            listOf(
+                Pair(socialite.id,  3),
+                Pair(assassin.id,   1),
+            ),
+        )
+        private val differentKaisa = ConstantDeck(
+            "differentKaisa",
+            listOf(
+                taric,
+                braum.with(warmog),
+                janna,
+                seraphine.with(morellonomicon),
+                galio.with(ionicSpark, brambleVest, dragonsClaw),
+                kaisa.with(hextechGunblade, shojin, jeweledGauntlet),
+                tahmKench,
+                yuumi,
+            ),
+            listOf(
+                galio,      kaisa,
+            ),
+            listOf(
+                Pair(socialite.id,  3),
+            ),
+        )
+        private val rerollMutant = ConstantDeck(
+            "rerollMutant",
+            listOf(
+                kassadin,
+                choGath.with(redemption, brambleVest, dragonsClaw),
+                malzahar.with(hextechGunblade, jeweledGauntlet, blueBuff),
+                mundo.with(ionicSpark),
+                sion,
+                kaisa.with(shojin),
+            ),
+            listOf(
+                malzahar,      choGath,
+            ),
+            listOf(
+                Pair(mutant.id,     2),
+            ),
+        )
+        private val rerollMissFortune = ConstantDeck(
+            "rerollMissFortune",
+            listOf(
+                leona,
+                missFortune.with(shojin, jeweledGauntlet, handOfJustice),
+                taric,
+                braum.with(brambleVest, dragonsClaw, warmog),
+                janna,
+                jhin.with(giantSlayer, infinityEdge),
+                orianna,
+                yuumi,
+            ),
+            listOf(
+                leona,      missFortune,braum,      jhin,
+            ),
+            listOf(
+                Pair(sniper.id,     1),
+                Pair(bodyguard.id,  1),
+            ),
+        )
+        private val rerollGaKaGCaiKo = ConstantDeck(
+            "rerollGaKaGCaiKo",
+            listOf(
+                caitlyn,
+                garen.with(bloodthirster, brambleVest, warmog),
+                graves,
+                kassadin,
+                blitzcrank,
+                kogMaw.with(giantSlayer, guinsoo, handOfJustice),
+                vi,
+                mundo,
+            ),
+            listOf(
+                garen,      kogMaw,
+            ),
+            listOf(),
+        )
+        private val rerollTrundle = ConstantDeck(
+            "rerollTrundle",
+            listOf(
+                ezreal,
+                blitzcrank,
+                trundle.with(bloodthirster, runaan, quicksilver),
+                vi,
+                ekko.with(morellonomicon),
+                braum,
+                janna,
+                jinx.with(guardianAngel, guinsoo),
+            ),
+            listOf(
+                trundle,    ekko,       jinx,
+            ),
+            listOf(
+                Pair(scrap.id,      2),
+                Pair(sister.id,     1),
+            ),
+        )
+        private val rerollKatarina = ConstantDeck(
+            "rerollKatarina",
+            listOf(
+                katarina.with(infinityEdge, ionicSpark, handOfJustice),
+                ekko.with(morellonomicon, frozenHeart),
+                leona,
+                talon,
+                braum.with(gargoyle, warmog),
+                lux.with(blueBuff),
+                akali,
+                yuumi,
+            ),
+            listOf(
+                katarina,   ekko,       braum,
+            ),
+            listOf(
+                Pair(assassin.id,   2),
+                Pair(academy.id,    1),
+            ),
+        )
+        private val rerollWarwick = ConstantDeck(
+            "rerollKatarina",
+            listOf(
+                singed,
+                quinn.with(shojin),
+                warwick.with(guinsoo, titansResolve, quicksilver),
+                lissandra.with(morellonomicon),
+                zac,
+                fiora.with(handOfJustice),
+                mundo.with(brambleVest, warmog),
+                kaisa
+            ),
+            listOf(
+                warwick,
+            ),
+            listOf(
+                Pair(chemtech.id,   1),
+                Pair(challenger.id, 1),
+            ),
+        )
+        private val rerollYordle = ConstantDeck(
+            "rerollYordle",
+            listOf(
+                poppy,
+                ziggs,
+                lulu,
+                tristana,
+                heimerdinger.with(archangelsStaff, jeweledGauntlet, blueBuff),
+                vex.with(brambleVest, dragonsClaw, warmog),
+                janna,
+                veigar.with(rabadon, hextechGunblade)
+            ),
+            listOf(
+                janna, veigar
+            ),
+            listOf(
+                Pair(yordleLord.id, 1),
+            ),
+        )
+
         val decks: List<ConstantDeck> = listOf(
             fiveChemtech,       highValueJinx,      bodyguardJhin,      sevenInnovator,
             challengerYone,     scholarLissandra,   sixArcanist,        clapio,
@@ -758,9 +785,5 @@ class TftConstants {
             rerollGaKaGCaiKo,   rerollTrundle,      rerollKatarina,     rerollWarwick,
             rerollYordle,
         )
-
-        val traitMap: Map<String, Trait> = traits.associateBy { trait -> trait.id }
-        val championMap: Map<String, Champion> = champions.associateBy { champion -> champion.id }
-        val championIndexMap: Map<String, Int> = champions.associate { it.id to champions.indexOf(it) }
     }
 }

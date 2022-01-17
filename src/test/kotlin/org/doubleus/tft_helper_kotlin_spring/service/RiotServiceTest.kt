@@ -72,4 +72,9 @@ internal class RiotServiceTest
         val statistics = riotService.getStatistics(0, 50)
         println(Json.encodeToString(statistics))
     }
+
+    @Test
+    fun getDeckInfoTest() {
+        println(Json.encodeToString(riotService.getDeckInfo()))
+    }
 }

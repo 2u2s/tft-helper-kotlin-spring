@@ -1,0 +1,1248 @@
+[
+  {
+    "id": "fiveChemtech",
+    "champions": [
+      {
+        "id": "TFT6_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_Lissandra",
+        "items": [
+          15,
+          34,
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Zac",
+        "items": []
+      },
+      {
+        "id": "TFT6_DrMundo",
+        "items": [
+          55,
+          66
+        ]
+      },
+      {
+        "id": "TFT6_Urgot",
+        "items": [
+          15,
+          19,
+          29
+        ]
+      },
+      {
+        "id": "TFT6_Jinx",
+        "items": [
+          23
+        ]
+      },
+      {
+        "id": "TFT6_TahmKench",
+        "items": []
+      },
+      {
+        "id": "TFT6_Viktor",
+        "items": [
+          14
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Sister",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Chemtech",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Twinshot",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Glutton",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "highValueJinx",
+    "champions": [
+      {
+        "id": "TFT6_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jhin",
+        "items": []
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jayce",
+        "items": [
+          55,
+          25
+        ]
+      },
+      {
+        "id": "TFT6_Jinx",
+        "items": [
+          15,
+          23,
+          49
+        ]
+      },
+      {
+        "id": "TFT6_TahmKench",
+        "items": []
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": [
+          37
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Enforcer",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sister",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Transformer",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Glutton",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "bodyguardJhin",
+    "champions": [
+      {
+        "id": "TFT6_Leona",
+        "items": []
+      },
+      {
+        "id": "TFT6_MissFortune",
+        "items": []
+      },
+      {
+        "id": "TFT6_Taric",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          56,
+          66
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jhin",
+        "items": [
+          19,
+          12,
+          29
+        ]
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": [
+          14
+        ]
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": [
+          37
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sniper",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "sevenInnovator",
+    "champions": [
+      {
+        "id": "TFT6_Ezreal",
+        "items": []
+      },
+      {
+        "id": "TFT6_Singed",
+        "items": []
+      },
+      {
+        "id": "TFT6_Zilean",
+        "items": []
+      },
+      {
+        "id": "TFT6_Heimerdinger",
+        "items": [
+          39,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          14,
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Jayce",
+        "items": [
+          16,
+          19,
+          12
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Innovator",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Transformer",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "challengerYone",
+    "champions": [
+      {
+        "id": "TFT6_Quinn",
+        "items": []
+      },
+      {
+        "id": "TFT6_Warwick",
+        "items": []
+      },
+      {
+        "id": "TFT6_Leona",
+        "items": []
+      },
+      {
+        "id": "TFT6_Samira",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          66
+        ]
+      },
+      {
+        "id": "TFT6_Fiora",
+        "items": [
+          25,
+          49
+        ]
+      },
+      {
+        "id": "TFT6_Yone",
+        "items": [
+          15,
+          26,
+          29
+        ]
+      },
+      {
+        "id": "TFT6_Kaisa",
+        "items": [
+          14,
+          39
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Challenger",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "scholarLissandra",
+    "champions": [
+      {
+        "id": "TFT6_Heimerdinger",
+        "items": []
+      },
+      {
+        "id": "TFT6_Lissandra",
+        "items": [
+          15,
+          34,
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Taric",
+        "items": [
+          55,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": [
+          14
+        ]
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          14
+        ]
+      },
+      {
+        "id": "TFT6_Jayce",
+        "items": [
+          25,
+          16
+        ]
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Innovator",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Transformer",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "sixArcanist",
+    "champions": [
+      {
+        "id": "TFT6_Ziggs",
+        "items": []
+      },
+      {
+        "id": "TFT6_Swain",
+        "items": []
+      },
+      {
+        "id": "TFT6_Malzahar",
+        "items": []
+      },
+      {
+        "id": "TFT6_Vex",
+        "items": [
+          55,
+          66,
+          36
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Lux",
+        "items": [
+          19,
+          39,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Viktor",
+        "items": [
+          14,
+          23
+        ]
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Arcanist",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "clapio",
+    "champions": [
+      {
+        "id": "TFT6_Blitzcrank",
+        "items": []
+      },
+      {
+        "id": "TFT6_Taric",
+        "items": []
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          14,
+          34,
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Sion",
+        "items": [
+          45
+        ]
+      },
+      {
+        "id": "TFT6_Galio",
+        "items": [
+          19,
+          23,
+          25
+        ]
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Protector",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Colossus",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "socialiteAkali",
+    "champions": [
+      {
+        "id": "TFT6_Shaco",
+        "items": []
+      },
+      {
+        "id": "TFT6_Taric",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": []
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Akali",
+        "items": [
+          19,
+          34,
+          36
+        ]
+      },
+      {
+        "id": "TFT6_Galio",
+        "items": [
+          55,
+          56
+        ]
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Syndicate",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Assassin",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "differentKaisa",
+    "champions": [
+      {
+        "id": "TFT6_Taric",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Galio",
+        "items": [
+          36,
+          55,
+          66
+        ]
+      },
+      {
+        "id": "TFT6_Kaisa",
+        "items": [
+          13,
+          14,
+          39
+        ]
+      },
+      {
+        "id": "TFT6_TahmKench",
+        "items": []
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Glutton",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollMutant",
+    "champions": [
+      {
+        "id": "TFT6_Kassadin",
+        "items": []
+      },
+      {
+        "id": "TFT6_ChoGath",
+        "items": [
+          47,
+          55,
+          66
+        ]
+      },
+      {
+        "id": "TFT6_Malzahar",
+        "items": [
+          13,
+          39,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_DrMundo",
+        "items": [
+          36
+        ]
+      },
+      {
+        "id": "TFT6_Sion",
+        "items": []
+      },
+      {
+        "id": "TFT6_Kaisa",
+        "items": [
+          14
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Mutant",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Protector",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Colossus",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollMissFortune",
+    "champions": [
+      {
+        "id": "TFT6_Leona",
+        "items": []
+      },
+      {
+        "id": "TFT6_MissFortune",
+        "items": [
+          14,
+          39,
+          49
+        ]
+      },
+      {
+        "id": "TFT6_Taric",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          66,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jhin",
+        "items": [
+          12,
+          19
+        ]
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sniper",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollGaKaGCaiKo",
+    "champions": [
+      {
+        "id": "TFT6_Caitlyn",
+        "items": []
+      },
+      {
+        "id": "TFT6_Garen",
+        "items": [
+          16,
+          55,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Graves",
+        "items": []
+      },
+      {
+        "id": "TFT6_Kassadin",
+        "items": []
+      },
+      {
+        "id": "TFT6_Blitzcrank",
+        "items": []
+      },
+      {
+        "id": "TFT6_KogMaw",
+        "items": [
+          12,
+          23,
+          49
+        ]
+      },
+      {
+        "id": "TFT6_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_DrMundo",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Enforcer",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sniper",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Protector",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Twinshot",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Mutant",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollTrundle",
+    "champions": [
+      {
+        "id": "TFT6_Ezreal",
+        "items": []
+      },
+      {
+        "id": "TFT6_Blitzcrank",
+        "items": []
+      },
+      {
+        "id": "TFT6_Trundle",
+        "items": [
+          16,
+          26,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ekko",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": []
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jinx",
+        "items": [
+          15,
+          23
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sister",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollKatarina",
+    "champions": [
+      {
+        "id": "TFT6_Katarina",
+        "items": [
+          19,
+          36,
+          49
+        ]
+      },
+      {
+        "id": "TFT6_Ekko",
+        "items": [
+          37,
+          45
+        ]
+      },
+      {
+        "id": "TFT6_Leona",
+        "items": []
+      },
+      {
+        "id": "TFT6_Talon",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          56,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Lux",
+        "items": [
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Akali",
+        "items": []
+      },
+      {
+        "id": "TFT6_Yuumi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Academy",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Assassin",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Cuddly",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollKatarina",
+    "champions": [
+      {
+        "id": "TFT6_Singed",
+        "items": []
+      },
+      {
+        "id": "TFT6_Quinn",
+        "items": [
+          14
+        ]
+      },
+      {
+        "id": "TFT6_Warwick",
+        "items": [
+          23,
+          25,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Lissandra",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Zac",
+        "items": []
+      },
+      {
+        "id": "TFT6_Fiora",
+        "items": [
+          49
+        ]
+      },
+      {
+        "id": "TFT6_DrMundo",
+        "items": [
+          55,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Kaisa",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Chemtech",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Challenger",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollYordle",
+    "champions": [
+      {
+        "id": "TFT6_Poppy",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ziggs",
+        "items": []
+      },
+      {
+        "id": "TFT6_Lulu",
+        "items": []
+      },
+      {
+        "id": "TFT6_Tristana",
+        "items": []
+      },
+      {
+        "id": "TFT6_Heimerdinger",
+        "items": [
+          34,
+          39,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Vex",
+        "items": [
+          55,
+          66,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Janna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Veigar",
+        "items": [
+          33,
+          13
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Yordle",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Arcanist",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_YordleLord",
+        "tierCurrent": 4
+      }
+    ]
+  }
+]
