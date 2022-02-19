@@ -98,6 +98,15 @@ class Parser {
                     println("val ${toCamelCase(it.get("name").toString().replace("\"", ""))} = ${it.get("id").asInt()}")
                 }
         }
+
+        fun getAndroidStringInfo(target: String) {
+            val championList = seasonData.get(target)
+            championList.forEach { champion ->
+                val id = champion.get("apiName").toString().replace("\"", "").replace("'", "\\'")
+                val name = champion.get("name").toString().replace("\"", "").replace("'", "\\'")
+                println("<string name=\"${id}\">${name}</string>")
+            }
+        }
     }
 }
 
@@ -108,5 +117,11 @@ fun main() {
     Parser.getChampionInfo()
     println("----")
     Parser.getItemInfo()
+    println("----")
+    Parser.getAndroidStringInfo("champions")
+    println("----")
+    Parser.getAndroidStringInfo("traits")
+    println("----")
+    Parser.getAndroidStringInfo("champions")
 }
  */
