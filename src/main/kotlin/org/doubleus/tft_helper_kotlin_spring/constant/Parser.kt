@@ -101,13 +101,17 @@ class Parser {
         }
 
         fun getAndroidStringInfo(target: String) {
-            val championList = seasonData.get(target)
-            championList.forEach { champion ->
-                val id = champion.get("apiName").toString().replace("\"", "").replace("'", "\\'")
-                val name = champion.get("name").toString().replace("\"", "").replace("'", "\\'")
-                println("<string name=\"${id}\">${name}</string>")
-            }
+            val dataList = seasonData.get(target)
+            dataList
+                .sortedBy { data -> data.get("apiName").toString() }
+                .forEach { champion ->
+                    val id = champion.get("apiName").toString().replace("\"", "").replace("'", "\\'")
+                    val name = champion.get("name").toString().replace("\"", "").replace("'", "\\'")
+                    println(toStringInfo(id, name))
+                }
         }
+
+        private fun toStringInfo(id: String, name: String): String = "<string name=\"${id}\">${name}</string>"
     }
 }
 
@@ -123,6 +127,5 @@ fun main() {
     println("----")
     Parser.getAndroidStringInfo("traits")
     println("----")
-    Parser.getAndroidStringInfo("champions")
 }
 */
