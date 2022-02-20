@@ -11,8 +11,8 @@ class Parser {
         private val rawData = file.readText(Charsets.UTF_8)
         private val mapper = ObjectMapper()
         private val tree = mapper.readTree(rawData)
-        private const val seasonIndex = 3
-        private val seasonData = tree.get("setData")[seasonIndex]
+        private const val seasonIndex = 6
+        private val seasonData = tree.get("sets").get(seasonIndex.toString())
 
         private fun toCamelCase(str: String): String {
             var shouldUpper = false
@@ -51,9 +51,10 @@ class Parser {
                     trait.get("effects").forEach{ style ->
                         styles.add(
                             TraitStyle(
+                                style = style.get("style").asInt(),
                                 min = style.get("minUnits").asInt(),
                                 max = style.get("maxUnits").asInt(),
-                                style = style.get("style").asInt()),
+                            )
                         )
                     }
                     var stylesStr = "listOf("
@@ -64,7 +65,7 @@ class Parser {
                     }
                     stylesStr += ")"
                     val parsedId = id.split("_")[1].replace("\"", "")
-                    println("val ${toCamelCase(parsedId)} = Trait(${id}, ${stylesStr})")
+                    println("private val ${toCamelCase(parsedId)} = Trait(${id}, ${stylesStr})")
                 }
         }
 
@@ -82,7 +83,7 @@ class Parser {
                         traitsStr += ", "
                 }
                 traitsStr += ")"
-                println("val ${toCamelCase(parsedId)} = Champion(\"${id}\", ${traitsStr}, ${cost}, mutableListOf())")
+                println("val ${toCamelCase(parsedId)} = Champion(\"${id}\", ${traitsStr}, ${cost})")
             }
         }
 
@@ -95,7 +96,7 @@ class Parser {
                 }
                 .sortedBy{ it.get("id").asInt() }
                 .forEach{
-                    println("val ${toCamelCase(it.get("name").toString().replace("\"", ""))} = ${it.get("id").asInt()}")
+                    println("private const val ${toCamelCase(it.get("name").toString().replace("\"", ""))} = ${it.get("id").asInt()}")
                 }
         }
 
@@ -124,4 +125,4 @@ fun main() {
     println("----")
     Parser.getAndroidStringInfo("champions")
 }
- */
+*/

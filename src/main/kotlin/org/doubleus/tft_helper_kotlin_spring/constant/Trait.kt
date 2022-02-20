@@ -6,9 +6,9 @@ data class Trait(
 )
 
 data class TraitStyle(
+    val style: Int,
     val min: Int,
     val max: Int,
-    val style: Int,
 ) {
     companion object {
         const val BRONZE = 1
