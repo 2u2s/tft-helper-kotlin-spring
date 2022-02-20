@@ -71,20 +71,26 @@ class Parser {
 
         fun getChampionInfo() {
             val championList = seasonData.get("champions")
-            championList.forEach{ champion ->
-                val cost = champion.get("cost").asInt()
-                val id = champion.get("apiName").toString().replace("\"", "")
-                val parsedId = id.split("_")[1].replace("\"", "")
-                val traits = champion.get("traits").toList()
-                var traitsStr = "listOf("
-                traits.forEachIndexed{i, it ->
-                    traitsStr += toCamelCase(it.toString().replace("\"", ""))
-                    if (i != (traits.size - 1))
-                        traitsStr += ", "
+            championList
+                .sortedBy { champion ->
+                    val cost = champion.get("cost").asInt()
+                    val id = champion.get("apiName").toString().replace("\"", "")
+                    return@sortedBy "${cost}${id}"
                 }
-                traitsStr += ")"
-                println("val ${toCamelCase(parsedId)} = Champion(\"${id}\", ${traitsStr}, ${cost})")
-            }
+                .forEach{ champion ->
+                    val cost = champion.get("cost").asInt()
+                    val id = champion.get("apiName").toString().replace("\"", "")
+                    val parsedId = id.split("_")[1].replace("\"", "")
+                    val traits = champion.get("traits").toList()
+                    var traitsStr = "listOf("
+                    traits.forEachIndexed{i, it ->
+                        traitsStr += toCamelCase(it.toString().replace("\"", ""))
+                        if (i != (traits.size - 1))
+                            traitsStr += ", "
+                    }
+                    traitsStr += ")"
+                    println("val ${toCamelCase(parsedId)} = Champion(\"${id}\", ${traitsStr}, ${cost})")
+                }
         }
 
         fun getItemInfo() {
@@ -101,6 +107,18 @@ class Parser {
         }
 
         fun getAndroidStringInfo(target: String) {
+            if (target == "items") {
+                tree.get("items")
+                    .filter{
+                        val filePath = it.get("icon").toString().replace("\"", "")
+                        filePath.startsWith("ASSETS/Maps/Particles/TFT/Item_Icons/Spatula/Set6") || filePath.startsWith("ASSETS/Maps/Particles/TFT/Item_Icons/Standard")
+                    }
+                    .sortedBy{ it.get("id").asInt() }
+                    .forEach{
+                        println(toStringInfo("item" + toCamelCase(it.get("id").toString().replace("\"", "")), it.get("name").toString()))
+                    }
+                return
+            }
             val dataList = seasonData.get(target)
             dataList
                 .sortedBy { data -> data.get("apiName").toString() }
@@ -115,7 +133,6 @@ class Parser {
     }
 }
 
-/*
 fun main() {
     Parser.getTraitInfo()
     println("----")
@@ -127,5 +144,5 @@ fun main() {
     println("----")
     Parser.getAndroidStringInfo("traits")
     println("----")
+    Parser.getAndroidStringInfo("items")
 }
-*/
