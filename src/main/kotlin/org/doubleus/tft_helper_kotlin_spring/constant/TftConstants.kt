@@ -454,6 +454,26 @@ class TftConstants {
         val championMap: Map<String, Champion> = champions.associateBy { champion -> champion.id }
         val championIndexMap: Map<String, Int> = champions.associate { it.id to champions.indexOf(it) }
 
+        //decks
+        val hextechSivir = ConstantDeck(
+            "hextechSivir",
+            listOf(
+                jarvanIV,
+                sejuani,
+                swain,
+                lucian,
+                alistar,
+                sivir,
+                vi,
+            ),
+            listOf(
+                sivir, alistar
+            ),
+            listOf(
+                Pair(hextech.id,    3),
+                Pair(striker.id,   1),
+            ),
+        )
 
         val decks: List<ConstantDeck> = listOf(
         )
