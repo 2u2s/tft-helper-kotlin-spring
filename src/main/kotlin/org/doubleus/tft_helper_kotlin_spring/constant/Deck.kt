@@ -10,7 +10,9 @@ import kotlin.math.sqrt
  * key: trait's id
  * value: trait's tier
  */
-typealias TraitInfo = Pair<String, Int>
+data class TraitInfo(val id: String, val value: Int)
+private fun List<TraitInfo>.toMap(): Map<String, Int> = this.associate { it.id to it.value }
+
 
 abstract class Deck(
     open val deckChampions: List<Champion>,
@@ -46,7 +48,7 @@ data class ConstantDeck(
         val userTraitMap = userDeck.traitInfos.toMap()
         var itHas = true
         mainTraitInfos.forEach { mainTrait ->
-            itHas = itHas && ((userTraitMap[mainTrait.first]?: 0) >= mainTrait.second)
+            itHas = itHas && ((userTraitMap[mainTrait.id]?: 0) >= mainTrait.value)
         }
         return itHas
     }
@@ -74,7 +76,7 @@ data class ConstantDeck(
                 }
             }
             if (tier != 0)
-                output.add(Pair(traitId, tier))
+                output.add(TraitInfo(traitId, tier))
         }
 
         return output
