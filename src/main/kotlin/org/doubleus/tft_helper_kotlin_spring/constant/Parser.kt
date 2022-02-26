@@ -40,6 +40,30 @@ object Parser {
         return parsed[0].lowercase() + parsed.substring(1)
     }
 
+    fun getAugmentInfo() {
+        val itemList = tree.get("items")
+        itemList
+            .filter{
+                val filePath = it.get("icon").toString().replace("\"", "")
+                return@filter filePath.startsWith("ASSETS/Maps/Particles/TFT/Item_Icons/Augments")
+            }
+            .sortedBy{ it.get("id").asInt() }
+            .forEach{
+                val name = it.get("name").toString()
+                val words = name.replace("\"", "").split(" ")
+                var id = ""
+                for (word in words) {
+                    id += when (word) {
+                        "I" -> "1"
+                        "II" -> "2"
+                        "III" -> "3"
+                        else -> word
+                    }
+                }
+                println("private const val ${id} = Augment(\"${id}\")")
+            }
+    }
+
     fun getTraitInfo() {
         val traitList = seasonData.get("traits")
         traitList
@@ -131,7 +155,10 @@ object Parser {
     private fun toStringInfo(id: String, name: String): String = "<string name=\"${id}\">${name}</string>"
 }
 
+/*
 fun main() {
+    Parser.getAugmentInfo()
+    println("----")
     Parser.getTraitInfo()
     println("----")
     Parser.getChampionInfo()
@@ -144,3 +171,4 @@ fun main() {
     println("----")
     Parser.getAndroidStringInfo("items")
 }
+*/
