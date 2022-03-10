@@ -467,15 +467,254 @@ class TftConstants {
                 vi,
             ),
             listOf(
-                sivir, alistar
+                sivir,
+                alistar,
             ),
             listOf(
-                Pair(hextech.id,    3),
-                Pair(striker.id,   1),
+                TraitInfo(hextech.id, 3),
+                TraitInfo(striker.id, 1),
+            ),
+        )
+        val bruiserRenata = ConstantDeck(
+            "bruiserRenata",
+            listOf(
+                illaoi,
+                rekSai,
+                sejuani,
+                zac,
+                renata,
+                vi,
+                silco,
+                tahmKench,
+            ),
+            listOf(
+                renata,
+                tahmKench,
+            ),
+            listOf(
+                TraitInfo(bruiser.id, 3),
+            ),
+        )
+        val socialiteIrelia = ConstantDeck(
+            "socialiteIrelia",
+            listOf(
+                jarvanIV,
+                blitzcrank,
+                gnar,
+                senna,
+                braum.with(brambleVest, dragonsClaw, warmog),
+                irelia.with(infinityEdge, lastWhisper, quicksilver),
+                seraphine.with(morellonomicon),
+                sivir,
+            ),
+            listOf(
+                ashe,
+                braum,
+            ),
+            listOf(
+                TraitInfo(socialite.id, 3),
+                TraitInfo(striker.id, 1),
+            ),
+        )
+        val innovatorKhaZix = ConstantDeck(
+            "innovatorKhaZix",
+            listOf(
+                ezreal,
+                zilean,
+                ekko,
+                khaZix,
+                orianna,
+                seraphine,
+                vi,
+                jayce,
+            ),
+            listOf(
+                jayce,
+                khaZix,
+            ),
+            listOf(
+                TraitInfo(assassin.id, 1),
+                TraitInfo(innovator.id, 2),
+            ),
+        )
+        val syndicateAhri = ConstantDeck(
+            "syndicateAhri",
+            listOf(
+                darius,
+                zyra,
+                morgana,
+                senna,
+                ahri.with(giantSlayer, rabadon, blueBuff),
+                braum.with(brambleVest, dragonsClaw, warmog),
+                orianna,
+                silco,
+            ),
+            listOf(
+                ahri,
+                braum,
+            ),
+            listOf(
+                TraitInfo(syndicate.id, 2),
+            ),
+        )
+        val rerollBrand = ConstantDeck(
+            "rerollBrand",
+            listOf(
+                brand.with(infinityEdge, jeweledGauntlet, blueBuff),
+                syndra,
+                talon,
+                leona.with(brambleVest, quicksilver, warmog),
+                braum,
+                draven,
+            ),
+            listOf(
+                ashe,
+                braum,
+            ),
+            listOf(
+                TraitInfo(syndicate.id, 2),
+                TraitInfo(sniper.id, 1),
+            ),
+        )
+        val rerollAshe = ConstantDeck(
+            "rerollAshe",
+            listOf(
+                darius,
+                ashe.with(infinityEdge, guinsoo, lastWhisper),
+                zyra,
+                morgana,
+                braum.with(brambleVest, dragonsClaw, quicksilver),
+                jhin.with(giantSlayer),
+                orianna.with(shojin),
+            ),
+            listOf(
+                ashe,
+                braum,
+            ),
+            listOf(
+                TraitInfo(syndicate.id, 2),
+                TraitInfo(sniper.id, 1),
+            ),
+        )
+        val rerollTalon = ConstantDeck(
+            "rerollTalon",
+            listOf(
+                blitzcrank,
+                syndra,
+                talon.with(infinityEdge, rapidFirecannon, quicksilver),
+                zyra,
+                ekko.with(morellonomicon),
+                leona.with(gargoyle, brambleVest),
+            ),
+            listOf(
+                talon,
+            ),
+            listOf(
+                TraitInfo(assassin.id, 1),
+                TraitInfo(debonair.id, 1),
+            ),
+        )
+        val rerollTKES = ConstantDeck(
+            "rerollTESC",
+            listOf(
+                camille.with(warmog),
+                ezreal,
+                singed,
+                twitch.with(infinityEdge, lastWhisper, runaan),
+                zilean,
+                ekko.with(morellonomicon),
+                tryndamere,
+                seraphine,
+            ),
+            listOf(
+                camille,
+                ezreal,
+                singed,
+                twitch,
+                ekko,
+            ),
+            listOf(
+                TraitInfo(assassin.id, 1),
+                TraitInfo(chemtech.id, 1),
+                TraitInfo(clockwork.id, 1),
+                TraitInfo(innovator.id, 2),
+            ),
+        )
+        val rerollMutant = ConstantDeck(
+            "rerollMutant",
+            listOf(
+                rekSai,
+                choGath.with(titansResolve, redemption, brambleVest),
+                malzahar.with(hextechGunblade, morellonomicon, blueBuff),
+                alistar,
+                khaZix.with(rapidFirecannon),
+                kaisa.with(shojin),
+            ),
+            listOf(
+                choGath,
+                malzahar,
+            ),
+            listOf(
+                TraitInfo(mutant.id, 2),
+                TraitInfo(bruiser.id, 1),
+                TraitInfo(colossus.id, 1),
+            ),
+        )
+        val rerollChemtech = ConstantDeck(
+            "rerollChemtech",
+            listOf(
+                camille,
+                singed,
+                quinn.with(shojin),
+                warwick.with(guinsoo, titansResolve, quicksilver),
+                tryndamere.with(infinityEdge, lastWhisper, bloodthirster),
+                zac.with(brambleVest, gargoyle),
+                renata,
+                vi
+            ),
+            listOf(
+                warwick,
+                tryndamere,
+            ),
+            listOf(
+                TraitInfo(chemtech.id, 2),
+                TraitInfo(challenger.id, 2),
+            ),
+        )
+        val rerollYordle = ConstantDeck(
+            "rerollYordle",
+            listOf(
+                poppy,
+                ziggs,
+                corki.with(giantSlayer, rabadon, blueBuff),
+                lulu,
+                senna,
+                gnar,
+                vex.with(titansResolve, brambleVest, quicksilver),
+                jinx,
+                veigar,
+            ),
+            listOf(
+                veigar,
+            ),
+            listOf(
+                TraitInfo(yordleLord.id, 1),
             ),
         )
 
         val decks: List<ConstantDeck> = listOf(
+            hextechSivir,
+            bruiserRenata,
+            socialiteIrelia,
+            innovatorKhaZix,
+            syndicateAhri,
+            rerollBrand,
+            rerollAshe,
+            rerollTalon,
+            rerollTKES,
+            rerollMutant,
+            rerollChemtech,
+            rerollYordle,
         )
     }
 }
