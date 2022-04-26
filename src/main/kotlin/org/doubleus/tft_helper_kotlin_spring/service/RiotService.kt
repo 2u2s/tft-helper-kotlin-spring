@@ -6,8 +6,7 @@ import kotlinx.serialization.json.Json
 import org.doubleus.tft_helper_kotlin_spring.constant.TftConstants
 import org.doubleus.tft_helper_kotlin_spring.dto.deck.DeckInfoDto
 import org.doubleus.tft_helper_kotlin_spring.dto.deck.DeckStatisticResultDto
-import org.doubleus.tft_helper_kotlin_spring.dto.riot.ChampionRecommendedItemDto
-import org.doubleus.tft_helper_kotlin_spring.dto.riot.RecommendedItemInfos
+import org.doubleus.tft_helper_kotlin_spring.dto.riot.RiotStatisticResultDto.*
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.RiotStatisticResultDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.match.MatchDto
 import org.doubleus.tft_helper_kotlin_spring.dto.riot.summoner.LeagueListDto
@@ -135,7 +134,7 @@ class RiotService(
 
     private fun getDeckStatistics(matchInfo: MatchDto, deckStatisticInfoMap: Map<String, DeckStatisticResultDto>) {
         val deckDefiningCriteria = 0.7
-        val completionCriteria = 0.94
+        val completionCriteria = 7.0/8
 
         val participants = matchInfo.info.participants
         participants.forEach { participant ->
