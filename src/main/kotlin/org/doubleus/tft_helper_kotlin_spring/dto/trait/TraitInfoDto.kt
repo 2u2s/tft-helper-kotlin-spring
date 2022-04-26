@@ -8,5 +8,5 @@ data class TraitInfoDto(
     val id: String,
     val tierCurrent: Int,
 ) {
-    constructor(traitInfo: TraitInfo): this(traitInfo.first, traitInfo.second)
+    constructor(traitInfo: TraitInfo): this(traitInfo.id, traitInfo.value)
 }

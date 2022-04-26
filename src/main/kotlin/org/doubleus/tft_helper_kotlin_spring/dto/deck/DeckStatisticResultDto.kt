@@ -14,22 +14,22 @@ data class DeckStatisticResultDto(
 
     @Serializable
     data class DeckStatisticInfo(
-        var game_cnt: Int,
-        var win_cnt: Int,
-        var top4_cnt: Int,
-        var rank_sum: Int,
+        var gameCnt: Int,
+        var winCnt: Int,
+        var top4Cnt: Int,
+        var rankSum: Int,
     )
 
     fun accumulateData(rank: Int, isCompleted: Boolean) {
-        total.game_cnt += 1
-        total.rank_sum += rank
-        total.top4_cnt +=  if(rank <= 4) 1 else 0
-        total.win_cnt += if(rank == 1) 1 else 0
+        total.gameCnt += 1
+        total.rankSum += rank
+        total.top4Cnt +=  if(rank <= 4) 1 else 0
+        total.winCnt += if(rank == 1) 1 else 0
         if (isCompleted) {
-            completed.game_cnt += 1
-            completed.rank_sum += rank
-            completed.top4_cnt +=  if(rank <= 4) 1 else 0
-            completed.win_cnt += if(rank == 1) 1 else 0
+            completed.gameCnt += 1
+            completed.rankSum += rank
+            completed.top4Cnt +=  if(rank <= 4) 1 else 0
+            completed.winCnt += if(rank == 1) 1 else 0
         }
     }
 

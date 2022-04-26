@@ -1,2 +1,786 @@
 [
+  {
+    "id": "hextechSivir",
+    "champions": [
+      {
+        "id": "TFT6_JarvanIV",
+        "items": []
+      },
+      {
+        "id": "TFT6_Sejuani",
+        "items": []
+      },
+      {
+        "id": "TFT6_Swain",
+        "items": []
+      },
+      {
+        "id": "TFT6_Lucian",
+        "items": []
+      },
+      {
+        "id": "TFT6_Alistar",
+        "items": []
+      },
+      {
+        "id": "TFT6_Sivir",
+        "items": []
+      },
+      {
+        "id": "TFT6b_Vi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Hextech",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Striker",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enforcer",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Rivals",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "bruiserRenata",
+    "champions": [
+      {
+        "id": "TFT6_Illaoi",
+        "items": []
+      },
+      {
+        "id": "TFT6_RekSai",
+        "items": []
+      },
+      {
+        "id": "TFT6_Sejuani",
+        "items": []
+      },
+      {
+        "id": "TFT6_Zac",
+        "items": []
+      },
+      {
+        "id": "TFT6_Renata",
+        "items": []
+      },
+      {
+        "id": "TFT6b_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_Silco",
+        "items": []
+      },
+      {
+        "id": "TFT6_TahmKench",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Enforcer",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Rivals",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Mastermind",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Glutton",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "socialiteIrelia",
+    "champions": [
+      {
+        "id": "TFT6_JarvanIV",
+        "items": []
+      },
+      {
+        "id": "TFT6_Blitzcrank",
+        "items": []
+      },
+      {
+        "id": "TFT6_Gnar",
+        "items": []
+      },
+      {
+        "id": "TFT6_Senna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          66,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Irelia",
+        "items": [
+          19,
+          29,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Sivir",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Hextech",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Striker",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "innovatorKhaZix",
+    "champions": [
+      {
+        "id": "TFT6_Ezreal",
+        "items": []
+      },
+      {
+        "id": "TFT6_Zilean",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ekko",
+        "items": []
+      },
+      {
+        "id": "TFT6_KhaZix",
+        "items": []
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": []
+      },
+      {
+        "id": "TFT6b_Vi",
+        "items": []
+      },
+      {
+        "id": "TFT6_Jayce",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Innovator",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Assassin",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enforcer",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Rivals",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Transformer",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "syndicateAhri",
+    "champions": [
+      {
+        "id": "TFT6_Darius",
+        "items": []
+      },
+      {
+        "id": "TFT6_Zyra",
+        "items": []
+      },
+      {
+        "id": "TFT6_Morgana",
+        "items": []
+      },
+      {
+        "id": "TFT6_Senna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ahri",
+        "items": [
+          12,
+          33,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          66,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Silco",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Syndicate",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Mastermind",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollBrand",
+    "champions": [
+      {
+        "id": "TFT6_Brand",
+        "items": [
+          19,
+          39,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Syndra",
+        "items": []
+      },
+      {
+        "id": "TFT6_Talon",
+        "items": []
+      },
+      {
+        "id": "TFT6_Leona",
+        "items": [
+          55,
+          69,
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": []
+      },
+      {
+        "id": "TFT6_Draven",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Debonair",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollAshe",
+    "champions": [
+      {
+        "id": "TFT6_Darius",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ashe",
+        "items": [
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "id": "TFT6_Zyra",
+        "items": []
+      },
+      {
+        "id": "TFT6_Morgana",
+        "items": []
+      },
+      {
+        "id": "TFT6_Braum",
+        "items": [
+          55,
+          66,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Jhin",
+        "items": [
+          12
+        ]
+      },
+      {
+        "id": "TFT6_Orianna",
+        "items": [
+          14
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Syndicate",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Sniper",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollTalon",
+    "champions": [
+      {
+        "id": "TFT6_Blitzcrank",
+        "items": []
+      },
+      {
+        "id": "TFT6_Syndra",
+        "items": []
+      },
+      {
+        "id": "TFT6_Talon",
+        "items": [
+          19,
+          22,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Zyra",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ekko",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Leona",
+        "items": [
+          56,
+          55
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Bodyguard",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Debonair",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scholar",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Assassin",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollTESC",
+    "champions": [
+      {
+        "id": "TFT6_Camille",
+        "items": [
+          77
+        ]
+      },
+      {
+        "id": "TFT6_Ezreal",
+        "items": []
+      },
+      {
+        "id": "TFT6_Singed",
+        "items": []
+      },
+      {
+        "id": "TFT6_Twitch",
+        "items": [
+          19,
+          29,
+          26
+        ]
+      },
+      {
+        "id": "TFT6_Zilean",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ekko",
+        "items": [
+          37
+        ]
+      },
+      {
+        "id": "TFT6_Tryndamere",
+        "items": []
+      },
+      {
+        "id": "TFT6_Seraphine",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Clockwork",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Challenger",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Innovator",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Chemtech",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Assassin",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 1
+      }
+    ]
+  },
+  {
+    "id": "rerollMutant",
+    "champions": [
+      {
+        "id": "TFT6_RekSai",
+        "items": []
+      },
+      {
+        "id": "TFT6_ChoGath",
+        "items": [
+          25,
+          47,
+          55
+        ]
+      },
+      {
+        "id": "TFT6_Malzahar",
+        "items": [
+          13,
+          37,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Alistar",
+        "items": []
+      },
+      {
+        "id": "TFT6_KhaZix",
+        "items": [
+          22
+        ]
+      },
+      {
+        "id": "TFT6_Kaisa",
+        "items": [
+          14
+        ]
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Mutant",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Colossus",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollChemtech",
+    "champions": [
+      {
+        "id": "TFT6_Camille",
+        "items": []
+      },
+      {
+        "id": "TFT6_Singed",
+        "items": []
+      },
+      {
+        "id": "TFT6_Quinn",
+        "items": [
+          14
+        ]
+      },
+      {
+        "id": "TFT6_Warwick",
+        "items": [
+          23,
+          25,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Tryndamere",
+        "items": [
+          19,
+          29,
+          16
+        ]
+      },
+      {
+        "id": "TFT6_Zac",
+        "items": [
+          55,
+          56
+        ]
+      },
+      {
+        "id": "TFT6_Renata",
+        "items": []
+      },
+      {
+        "id": "TFT6b_Vi",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Challenger",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Chemtech",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Bruiser",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Rivals",
+        "tierCurrent": 3
+      }
+    ]
+  },
+  {
+    "id": "rerollYordle",
+    "champions": [
+      {
+        "id": "TFT6_Poppy",
+        "items": []
+      },
+      {
+        "id": "TFT6_Ziggs",
+        "items": []
+      },
+      {
+        "id": "TFT6_Corki",
+        "items": [
+          12,
+          33,
+          44
+        ]
+      },
+      {
+        "id": "TFT6_Lulu",
+        "items": []
+      },
+      {
+        "id": "TFT6_Senna",
+        "items": []
+      },
+      {
+        "id": "TFT6_Gnar",
+        "items": []
+      },
+      {
+        "id": "TFT6_Vex",
+        "items": [
+          25,
+          55,
+          69
+        ]
+      },
+      {
+        "id": "TFT6_Jinx",
+        "items": []
+      },
+      {
+        "id": "TFT6_Veigar",
+        "items": []
+      }
+    ],
+    "traits": [
+      {
+        "id": "Set6_Yordle",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_Scrap",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Arcanist",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Twinshot",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Enchanter",
+        "tierCurrent": 1
+      },
+      {
+        "id": "Set6_Socialite",
+        "tierCurrent": 2
+      },
+      {
+        "id": "Set6_Rivals",
+        "tierCurrent": 3
+      },
+      {
+        "id": "Set6_YordleLord",
+        "tierCurrent": 4
+      }
+    ]
+  }
 ]
